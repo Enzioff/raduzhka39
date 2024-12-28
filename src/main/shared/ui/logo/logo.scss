@@ -1,0 +1,10 @@
+.logo {
+  display: flex;
+  flex-shrink: 0;
+  flex-grow: 1;
+
+  @include r($mobile) {
+    width: 161px;
+    height: 35px;
+  }
+}

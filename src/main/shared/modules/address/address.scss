@@ -1,0 +1,30 @@
+.address {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex-grow: 1;
+
+  &__text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0 12px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    text-align: center;
+
+    &--small {
+      font-size: 13px;
+      line-height: 16px;
+      text-align: center;
+    }
+  }
+
+  &__link {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 33px;
+    text-align: center;
+  }
+}

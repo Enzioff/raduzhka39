@@ -1,0 +1,107 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 20px 40px;
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $white;
+
+  border: 2px solid $primary;
+  border-radius: 100px;
+  background-color: $primary;
+
+  transition: .2s linear;
+  cursor: pointer;
+
+  @include r($mobile) {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  &:hover {
+    color: $violet;
+    background-color: transparent;
+    border-color: $violet;
+    opacity: 1;
+
+    .button__icon {
+      fill: $violet;
+    }
+  }
+
+  &--outline {
+    text-transform: none;
+    color: $violet;
+    background-color: transparent;
+    border-color: $violet;
+    opacity: 1;
+
+    &:hover {
+      color: $white;
+      background-color: $violet;
+
+      .button__icon {
+        &--default {
+          fill: $white;
+        }
+      }
+    }
+
+    .button__icon {
+      &--default {
+        fill: $violet;
+      }
+    }
+  }
+
+  &--main {
+    padding: 35px 75px;
+
+    @include r($mobile) {
+      padding: 22px 27px;
+    }
+  }
+
+  &--big {
+    padding: 30px;
+
+    @include r($mobile) {
+      padding: 10px 30px;
+      text-align: center;
+    }
+  }
+
+  &--icon {
+    padding: 10px;
+  }
+
+  &__icon {
+    display: flex;
+    width: 26px;
+    height: 26px;
+    transform: rotate(-45deg);
+    fill: $white;
+    transition: .2s linear;
+
+    &--default {
+      width: 33px;
+      height: 10px;
+      transform: none;
+    }
+  }
+
+  &--light {
+    color: $white;
+    border-color: $white;
+  }
+
+  &--wide-mob {
+    width: 100%;
+  }
+}

@@ -1,0 +1,54 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  gap: 10px;
+  width: 100%;
+  @include calc-max-width(670, 1570);
+  padding: 46px 50px;
+  border-radius: 20px;
+  background: $gradient-primary-light;
+
+  @include r($mobile) {
+    padding: 30px 20px;
+    max-width: 100%;
+  }
+
+  &--full {
+    max-width: 100%;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    text-align: center;
+
+    @include r($mobile) {
+      font-size: 26px;
+      font-weight: 500;
+      line-height: 33px;
+    }
+  }
+
+  &__accept {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    cursor: pointer;
+
+    @include r($mobile) {
+      gap: 10px;
+    }
+
+    span {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 17px;
+
+      @include r($mobile) {
+        font-size: 12px;
+        line-height: 15px;
+      }
+    }
+  }
+}

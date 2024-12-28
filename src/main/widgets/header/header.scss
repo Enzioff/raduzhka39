@@ -1,0 +1,58 @@
+.header {
+  padding-top: 20px;
+  padding-bottom: 26px;
+  z-index: 3;
+
+  &__wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 20px;
+    border: 2px solid $violet;
+    border-radius: 40px;
+
+    &.active {
+      background-color: $violet;
+
+      .header__text {
+        color: $white;
+      }
+
+      .burger {
+        &::before,
+        &::after,
+        &__item {
+          background-color: $white;
+        }
+
+        &__item {
+          top: -5px;
+        }
+
+        &::before {
+          top: 6px;
+          transform: rotate(45deg);
+        }
+        &::after {
+          top: 6px;
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
+
+  &__text {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15px;
+    color: $violet;
+  }
+}

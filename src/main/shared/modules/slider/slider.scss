@@ -1,0 +1,171 @@
+.slider {
+  display: flex;
+  width: 100%;
+
+  .swiper {
+    width: 100%;
+  }
+
+  &--relative {
+    position: relative;
+
+    .swiper {
+      position: static;
+    }
+  }
+
+  &--pagination {
+    .swiper {
+      display: flex;
+      flex-direction: column;
+      gap: 60px;
+
+      @include r($mobile) {
+        gap: 30px;
+      }
+    }
+
+    .swiper-pagination {
+      position: static;
+      margin: 0 auto;
+      transform: none;
+
+      &-bullet {
+        width: 8px;
+        height: 8px;
+        background-color: $gray-light;
+
+        &-active {
+          width: 40px;
+          background-color: $violet;
+        }
+      }
+    }
+  }
+
+  &--full-page {
+    width: 100vw;
+  }
+
+  &--auto {
+    margin: 0 auto;
+    width: fit-content;
+
+    .swiper {
+      @include r($mobile) {
+        overflow: visible;
+      }
+    }
+
+    .swiper-slide {
+      width: auto !Important;
+    }
+  }
+
+  &--visible {
+    .swiper {
+      overflow: visible;
+    }
+
+    .swiper-slide {
+      opacity: 0;
+      pointer-events: none;
+      transition: .2s linear;
+    }
+
+    .swiper-slide-visible {
+      opacity: 1;
+      pointer-events: auto;
+    }
+  }
+}
+
+.swiper-pagination {
+  position: absolute;
+  left: 50%;
+  bottom: 40px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  transform: translateX(-50%);
+  z-index: 1;
+
+  @include r($mobile) {
+    bottom: 20px;
+  }
+
+  &-bullet {
+    display: flex;
+    width: 12px;
+    height: 12px;
+    background-color: $white;
+    border-radius: 50%;
+    transition: .2s linear;
+
+    @include r($mobile) {
+      width: 8px;
+      height: 8px;
+    }
+
+    &-active {
+      width: 40px;
+      background-color: $violet;
+      border-radius: 100px;
+    }
+  }
+}
+
+.swiper {
+  &-control {
+    position: absolute;
+    top: 50%;
+    left: -94px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100% + 188px);
+    transform: translateY(-50%);
+    pointer-events: none;
+    z-index: 1;
+
+    @include r($mobile) {
+      position: static;
+      width: 100%;
+      margin-top: 30px;
+      transform: none;
+    }
+
+    &--slim {
+      left: -18px;
+      width: calc(100% + 36px);
+    }
+  }
+
+  &-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    cursor: pointer;
+    pointer-events: auto;
+    background-color: $primary;
+
+    svg {
+      display: flex;
+      width: 12px;
+      height: 12px;
+      fill: $white;
+    }
+
+    &-prev {
+      transform: rotate(-180deg);
+    }
+  }
+}
+
+.slider__btn--disabled {
+  opacity: 0.7;
+  pointer-events: none;
+}

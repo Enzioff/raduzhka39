@@ -1,0 +1,12 @@
+.tel-link {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 45px;
+  color: $white;
+
+  @include r($mobile) {
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+  }
+}

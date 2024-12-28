@@ -1,0 +1,27 @@
+.title {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 51px;
+
+  @include r($mobile) {
+    font-size: 26px;
+    line-height: 33px;
+  }
+
+  &--main {
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 63px;
+
+    @include r($mobile) {
+      font-size: 26px;
+      line-height: 33px;
+    }
+  }
+
+  &--small {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px;
+  }
+}

@@ -1,0 +1,27 @@
+.text {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 31px;
+  color: $gray;
+
+  @include r($mobile) {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+
+  &--subtitle {
+    color: $black;
+  }
+
+  &--big {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 40px;
+
+    @include r($mobile) {
+      font-size: 20px;
+      line-height: 25px;
+    }
+  }
+}

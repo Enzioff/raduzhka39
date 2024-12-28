@@ -1,0 +1,24 @@
+.picture {
+  display: flex;
+  width: 100%;
+  min-height: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+  aspect-ratio: 16/9;
+
+  @include r($mobile) {
+    min-height: 250px;
+  }
+
+  img {
+    @include coverFull();
+  }
+
+  &--slim {
+    min-height: 150px;
+
+    @include r($mobile) {
+      min-height: 100px;
+    }
+  }
+}

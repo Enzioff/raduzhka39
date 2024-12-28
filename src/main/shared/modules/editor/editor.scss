@@ -1,0 +1,48 @@
+.editor {
+  h3 {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 28px;
+
+    @include r($mobile) {
+      font-size: 18px;
+      line-height: 21px;
+    }
+  }
+
+  li,
+  p,
+  a {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    color: $gray;
+
+    @include r($mobile) {
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+
+  ul {
+    list-style: disc;
+    padding-left: 20px;
+  }
+
+  span,
+  b {
+    font-weight: 600;
+  }
+
+  i {
+    font-style: italic;
+  }
+
+  a {
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

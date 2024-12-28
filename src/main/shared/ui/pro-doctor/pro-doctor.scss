@@ -1,0 +1,50 @@
+.pro-doctor {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__rating {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  &__icon {
+    display: flex;
+    width: 32px;
+    height: 32px;
+    fill: $blue;
+
+    @include r($mobile) {
+      width: 17px;
+      height: 17px;
+    }
+  }
+
+  &__text {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 38px;
+    color: $red;
+
+    @include r($mobile) {
+      font-size: 17px;
+      line-height: 20px;
+    }
+  }
+
+  &__picture {
+    display: flex;
+    @include r($mobile) {
+      width: 76px;
+      height: 19px;
+    }
+  }
+}

@@ -1,0 +1,52 @@
+.nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  justify-content: space-between;
+  gap: 10px;
+
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    span {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 20px;
+      transition: .2s linear;
+
+      &:hover {
+        color: $violet;
+
+        .nav__icon {
+          fill: $violet;
+        }
+      }
+    }
+
+    &--dropdown {
+      &:hover {
+        .dropdown {
+          opacity: 1;
+          visibility: visible;
+          transition-delay: 0s;
+        }
+      }
+    }
+  }
+
+  &__icon {
+    display: flex;
+    flex-shrink: 0;
+    width: 6px;
+    height: 6px;
+    fill: $black;
+    transition: .2s linear;
+  }
+}
