@@ -1,0 +1,33 @@
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+
+  &__link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 34px;
+    color: $white;
+
+    @include r($mobile) {
+      font-size: 12px;
+      line-height: 22px;
+    }
+
+    &:not(:first-child) {
+      &::before {
+        content: '/';
+      }
+    }
+
+    a {
+      font-weight: 400;
+      text-decoration: underline;
+    }
+  }
+}

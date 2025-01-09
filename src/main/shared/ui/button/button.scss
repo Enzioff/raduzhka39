@@ -102,6 +102,8 @@
   }
 
   &--wide-mob {
-    width: 100%;
+    @include r($mobile) {
+      width: 100%;
+    }
   }
 }

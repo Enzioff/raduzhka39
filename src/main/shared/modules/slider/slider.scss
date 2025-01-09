@@ -47,6 +47,14 @@
     width: 100vw;
   }
 
+  &--mob-auto {
+    @include r($mobile) {
+      .swiper-slide {
+        width: auto !Important;
+      }
+    }
+  }
+
   &--auto {
     margin: 0 auto;
     width: fit-content;

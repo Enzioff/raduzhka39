@@ -8,7 +8,21 @@
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
+  &--auto {
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+
+    @include r($mobile) {
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    }
+  }
+
   &__item {
+
+    &--flex {
+      display: flex;
+      flex-direction: column;
+    }
+
     &--1 {
       grid-column: span 1;
     }

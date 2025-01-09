@@ -1,0 +1,32 @@
+.picture-backdrop {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0 0 20px;
+  height: 100%;
+  border-radius: 250px 0 20px 0;
+
+  @include r($mobile) {
+    padding: 10px 0 0 10px;
+    border-radius: 100px 0 10px 0;
+  }
+
+  &__img {
+    @include coverFull();
+    border-radius: 250px 0 20px 0;
+    z-index: 1;
+
+    @include r($mobile) {
+      border-radius: 100px 0 10px 0;
+    }
+
+    &--backdrop {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 0;
+      opacity: .2;
+    }
+  }
+}

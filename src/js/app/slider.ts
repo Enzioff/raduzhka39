@@ -11,11 +11,13 @@ class Slider {
     desktopOnly;
     mobileOnly;
     media;
+    isAuto;
     
     constructor(el: Element) {
         this.el = el;
         this.sliderType = this.el.getAttribute('data-slider');
         this.slidesCount = this.el.getAttribute('data-slides')
+        this.isAuto = this.el.hasAttribute('data-auto');
         
         this.buttonPrev = this.el.querySelector('.swiper-btn-prev');
         this.buttonNext = this.el.querySelector('.swiper-btn-next');
@@ -70,7 +72,7 @@ class Slider {
         const slider = this.el.querySelector('.swiper');
         new Swiper(slider, {
             modules: [Navigation, Pagination],
-            slidesPerView: 1,
+            slidesPerView: this.isAuto ? 'auto' : 1,
             spaceBetween: 10,
             watchSlidesProgress: true,
             navigation: {
@@ -82,7 +84,7 @@ class Slider {
                 el: '.swiper-pagination',
             },
             breakpoints: {
-                1920: {
+                1950: {
                     slidesPerView: 4,
                     spaceBetween: 35,
                 },
@@ -91,7 +93,7 @@ class Slider {
                     spaceBetween: 35,
                 },
                 768: {
-                    slidesPerView: 2,
+                    slidesPerView: this.isAuto ? 'auto' : 2,
                     spaceBetween: 20,
                 }
             },

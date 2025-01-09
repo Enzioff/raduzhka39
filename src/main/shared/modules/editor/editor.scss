@@ -1,4 +1,16 @@
 .editor {
+  h2 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 51px;
+    color: $black;
+
+    @include r($mobile) {
+      font-size: 26px;
+      line-height: 33px;
+    }
+  }
+
   h3 {
     font-size: 22px;
     font-weight: 600;
@@ -13,25 +25,26 @@
   li,
   p,
   a {
-    font-size: 18px;
+    font-size: 26px;
     font-weight: 400;
-    line-height: 30px;
+    line-height: 40px;
     color: $gray;
 
     @include r($mobile) {
-      font-size: 14px;
-      line-height: 18px;
+      font-size: 16px;
+      line-height: 26px;
     }
   }
 
   ul {
     list-style: disc;
-    padding-left: 20px;
+    padding-left: 35px;
   }
 
   span,
   b {
-    font-weight: 600;
+    font-weight: 700;
+    color: $black;
   }
 
   i {
