@@ -1,3 +1,5 @@
+@use "sass:math";
+
 .button {
   display: flex;
   align-items: center;
@@ -61,7 +63,7 @@
   }
 
   &--main {
-    padding: 35px 75px;
+    padding: 35px math.floor(calc(150 / 1350 * 100%));
 
     @include r($mobile) {
       padding: 22px 27px;
