@@ -2,6 +2,8 @@ import Slider from "./slider";
 import {Fancybox} from "@fancyapps/ui";
 import Mask from "./mask";
 import MobileMenu from "./mobile-menu";
+import Tabs from "./tabs";
+import Video from "./video";
 
 class App {
     constructor() {
@@ -14,6 +16,8 @@ class App {
         this.createMask()
         this.createMobileMenu()
         this.createShowMore()
+        this.createTabs()
+        this.createVideo()
     }
     
     createSlider = () => {
@@ -60,6 +64,24 @@ class App {
                     }
                 }
             })
+        })
+    }
+    
+    createTabs = () => {
+        const tabs = document.querySelectorAll('[data-tabs]');
+        if (!tabs) return
+        
+        tabs.forEach(tab => {
+            new Tabs(tab)
+        })
+    }
+    
+    createVideo = () => {
+        const videos = document.querySelectorAll('[data-video]');
+        if (!videos) return
+        
+        videos.forEach(video => {
+            new Video(video)
         })
     }
 }

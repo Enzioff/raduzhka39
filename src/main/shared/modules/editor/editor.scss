@@ -17,8 +17,9 @@
     line-height: 28px;
 
     @include r($mobile) {
-      font-size: 18px;
-      line-height: 21px;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 18px;
     }
   }
 
@@ -56,6 +57,32 @@
 
     &:hover {
       text-decoration: none;
+    }
+  }
+
+  &--small {
+    li,
+    p,
+    a {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 30px;
+      color: $gray;
+
+      @include r($mobile) {
+        font-size: 12px;
+        line-height: 19px;
+      }
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    span,
+    b {
+      font-weight: 700;
+      color: #555555;
     }
   }
 }

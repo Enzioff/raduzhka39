@@ -5,75 +5,584 @@
 <body>
 <%= htmlWebpackPlugin.options.widgets.header %>
 <main class="main">
-    <section class="section section--fluid mb-40 mbm-60">
+    <section class="section pb-60">
         <div class="container container--fluid">
-            <div class="slider" data-slider="default">
-                <div class="swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <article class="article-preview">
-                                <div class="article-preview__info">
-                                    <h2 class="article-preview__title title title--main">Передовые методики диагностики
-                                        и лечения</h2>
-                                    <p class="article-preview__text text">
-                                        Наши специалисты помогут Вам диагностировать, в том числе и на раннем этапе,
-                                        различные заболевания глаз, поставить правильный диагноз и помогут Вам в
-                                        лечении.
-                                    </p>
-                                    <button class="button button--main button--wide-mob" data-fancybox
-                                            data-src="modal-form">Записаться на консультацию
-                                    </button>
-                                </div>
-                                <picture class="article-preview__picture">
-                                    <source srcset="./assets/images/pic-1-mob.png" media="(max-width: 1399px)">
-                                    <img src="./assets/images/pic-1.jpg" alt="">
-                                </picture>
-                            </article>
+            <div class="intro">
+                <div class="container container--no-padding">
+                    <div class="grid">
+                        <div class="grid__item grid__item--flex grid__item--8 grid__item-mob--4">
+                            <div class="breadcrumbs">
+                                <p class="breadcrumbs__link">
+                                    <a href="#">Главная</a>
+                                </p>
+                                <p class="breadcrumbs__link">
+                                    <a href="#">Услуги</a>
+                                </p>
+                                <p class="breadcrumbs__link">Комплексное обследование зрения</p>
+                            </div>
+                            
+                            <div class="intro__wrapper">
+                                <h1 class="intro__title title title--main">Комплексное обследование зрения</h1>
+                                <p class="intro__text text text--big">
+                                    Наши специалисты помогут Вам диагностировать, в том числе и на раннем этапе,
+                                    различные заболевания глаз, поставить правильный диагноз и помогут Вам в лечении.
+                                </p>
+                                <p class="intro__text text text--big">
+                                    Цена услуги - <span>2200 ₽</span>
+                                </p>
+                                <button class="button button--main button--light button--wide-mob" data-fancybox=""
+                                        data-src="modal-form">Записаться на консультацию
+                                </button>
+                            </div>
                         </div>
-                        <div class="swiper-slide">
-                            <article class="article-preview">
-                                <div class="article-preview__info">
-                                    <h2 class="article-preview__title title title--main">Передовые методики диагностики
-                                        и лечения</h2>
-                                    <p class="article-preview__text text">
-                                        Наши специалисты помогут Вам диагностировать, в том числе и на раннем этапе,
-                                        различные заболевания глаз, поставить правильный диагноз и помогут Вам в
-                                        лечении.
-                                    </p>
-                                    <button class="button button--main button--wide-mob">Записаться на консультацию
-                                    </button>
-                                </div>
-                                <picture class="article-preview__picture">
-                                    <img src="./assets/images/pic-1.png" alt="">
-                                </picture>
-                            </article>
-                        </div>
-                        <div class="swiper-slide">
-                            <article class="article-preview">
-                                <div class="article-preview__info">
-                                    <h2 class="article-preview__title title title--main">Передовые методики диагностики
-                                        и лечения</h2>
-                                    <p class="article-preview__text text">
-                                        Наши специалисты помогут Вам диагностировать, в том числе и на раннем этапе,
-                                        различные заболевания глаз, поставить правильный диагноз и помогут Вам в
-                                        лечении.
-                                    </p>
-                                    <button class="button button--main button--wide-mob">Записаться на консультацию
-                                    </button>
-                                </div>
-                                <picture class="article-preview__picture">
-                                    <img src="./assets/images/pic-1.png" alt="">
-                                </picture>
-                            </article>
+                        <div class="grid__item grid__item--1 mob-hidden"></div>
+                        <div class="grid__item grid__item--7 grid__item-mob--4">
+                            <picture class="intro__picture picture-backdrop">
+                                <img class="picture-backdrop__img" src="./assets/images/pic-9.png" alt="">
+                                <img class="picture-backdrop__img picture-backdrop__img--backdrop"
+                                     src="./assets/images/pic-9.png" alt="">
+                            </picture>
                         </div>
                     </div>
-                    <div class="swiper-pagination"></div>
                 </div>
             </div>
         </div>
     </section>
     <section class="section pb-110 pbm-60">
         <div class="container">
+            <div class="editor">
+                <h2>Тут описание для услуги</h2>
+                <br>
+                <p>
+                    Мы работаем на современном немецком оборудовании одного из ведущих мировых производителей (Carl
+                    Zeiss Meditac AG, Germany). Оборудование данного разработчика является “золотым стандартом” в
+                    диагностике и лечении заболеваний глаз.<br>
+                    Коллектив центра состоит из высококвалифицированных врачей-офтальмологов и офтальмохирургов,
+                    обладающих большим опытом в лечении и диагностике заболеваний глаз, и оказывающих помощь пациентам
+                    на самом высоком уровне и в соответствии с государственными стандартами.<br>
+                    Врачи центра постоянно участвуют в международных конференциях, уделяют большое внимание внедрению в
+                    практику современных методик лечения и диагностики, а также регулярно обмениваются опытом с
+                    коллегами, являющиеся ведущими специалистами в области офтальмологии.<br>
+                    Мы используем только высококачественные и современные расходные материалы, что позволяет нам достичь
+                    запланированного результата и безопасности услуг для наших пациентов.<br>
+                    Мы заботимся о качестве и безопасности, даже при выполнении, самых “простых”, казалось бы,
+                    манипуляций и операций.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="section pb-110 pbm-60">
+        <div class="container">
+            <div class="head-block head-block--row mb-40">
+                <h2 class="title">Наши врачи</h2>
+                <a href="#" class="button button--outline mob-hidden">
+                    Перейти к специалистам
+                    <svg class="button__icon button__icon--default">
+                        <use xlink:href="./assets/sprite.svg#icon-arrow-pointer"></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="slider slider--pagination slider--relative mbm-30" data-slider="cards" data-slides="3">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <article class="article-person">
+                                <picture class="article-person__picture">
+                                    <img src="./assets/images/spec-1.png" alt="">
+                                </picture>
+                                <div class="article-person__info">
+                                    <h3 class="article-person__title">Бердюгин Андрей Анатольевич</h3>
+                                    <p class="article-person__description">врач-офтальмолог, высшая квалификационная
+                                        категория</p>
+                                    <p class="article-person__exp">стаж работы — 41 год</p>
+                                    <div class="editor editor--small" data-content>
+                                        <h3>Профиль лечения:</h3>
+                                        <ul>
+                                            <li>
+                                                Атрофия зрительного нерва
+                                            </li>
+                                            <li>
+                                                Аденовирусный конъюнктивит
+                                            </li>
+                                            <li>
+                                                Глаукома
+                                            </li>
+                                            <li>
+                                                Астигматизм
+                                            </li>
+                                            <li>
+                                                Миопия
+                                            </li>
+                                            <li>
+                                                Катаракта
+                                            </li>
+                                            <li>
+                                                Кератит
+                                            </li>
+                                            <li>
+                                                Дальнозоркость
+                                            </li>
+                                        </ul>
+                                        <br>
+                                        <h3>Профиль лечения:</h3>
+                                        <ul>
+                                            <li>
+                                                <span>1982 г.</span> Тюменский медицинский институт. Специальность:
+                                                лечебное дело.
+                                            </li>
+                                            <li>
+                                                <span>2019 г.</span> Автономная некоммерческая организация
+                                                дополнительного профессионального образования «Академия медицинского
+                                                образования».
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <a href="#" class="article-person__more show-more" data-show-more>
+                                        <span>Читать подробнее</span>
+                                        <svg class="show-more__icon">
+                                            <use xlink:href="./assets/sprite.svg#icon-arrow-down"></use>
+                                        </svg>
+                                    </a>
+                                    <button class="article-person__button button">Записаться на прием</button>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="article-person">
+                                <picture class="article-person__picture">
+                                    <img src="./assets/images/spec-2.png" alt="">
+                                </picture>
+                                <div class="article-person__info">
+                                    <h3 class="article-person__title">Крюкова Елена Вячеславовна</h3>
+                                    <p class="article-person__description">врач-офтальмолог, детский офтальмолог,
+                                        Кандидат медицинских наук</p>
+                                    <p class="article-person__exp">стаж работы — 33 года</p>
+                                    <div class="editor editor--small" data-content>
+                                        <h3>Профиль лечения:</h3>
+                                        <ul>
+                                            <li>
+                                                Атрофия зрительного нерва
+                                            </li>
+                                            <li>
+                                                Аденовирусный конъюнктивит
+                                            </li>
+                                            <li>
+                                                Глаукома
+                                            </li>
+                                            <li>
+                                                Астигматизм
+                                            </li>
+                                            <li>
+                                                Миопия
+                                            </li>
+                                            <li>
+                                                Катаракта
+                                            </li>
+                                            <li>
+                                                Кератит
+                                            </li>
+                                            <li>
+                                                Дальнозоркость
+                                            </li>
+                                        </ul>
+                                        <br>
+                                        <h3>Профиль лечения:</h3>
+                                        <ul>
+                                            <li>
+                                                <span>1982 г.</span> Тюменский медицинский институт. Специальность:
+                                                лечебное дело.
+                                            </li>
+                                            <li>
+                                                <span>2019 г.</span> Автономная некоммерческая организация
+                                                дополнительного профессионального образования «Академия медицинского
+                                                образования».
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <a href="#" class="article-person__more show-more" data-show-more>
+                                        <span>Читать подробнее</span>
+                                        <svg class="show-more__icon">
+                                            <use xlink:href="./assets/sprite.svg#icon-arrow-down"></use>
+                                        </svg>
+                                    </a>
+                                    <button class="article-person__button button">Записаться на прием</button>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="article-person">
+                                <picture class="article-person__picture">
+                                    <img src="./assets/images/spec-3.png" alt="">
+                                </picture>
+                                <div class="article-person__info">
+                                    <h3 class="article-person__title">Кирюшина Дарья Андреевна</h3>
+                                    <p class="article-person__description">врач-педиатр</p>
+                                    <p class="article-person__exp">стаж работы — 00 год</p>
+                                    <div class="editor editor--small" data-content>
+                                        <h3>Профиль лечения:</h3>
+                                        <ul>
+                                            <li>
+                                                Атрофия зрительного нерва
+                                            </li>
+                                            <li>
+                                                Аденовирусный конъюнктивит
+                                            </li>
+                                            <li>
+                                                Глаукома
+                                            </li>
+                                            <li>
+                                                Астигматизм
+                                            </li>
+                                            <li>
+                                                Миопия
+                                            </li>
+                                            <li>
+                                                Катаракта
+                                            </li>
+                                            <li>
+                                                Кератит
+                                            </li>
+                                            <li>
+                                                Дальнозоркость
+                                            </li>
+                                        </ul>
+                                        <br>
+                                        <h3>Профиль лечения:</h3>
+                                        <ul>
+                                            <li>
+                                                <span>1982 г.</span> Тюменский медицинский институт. Специальность:
+                                                лечебное дело.
+                                            </li>
+                                            <li>
+                                                <span>2019 г.</span> Автономная некоммерческая организация
+                                                дополнительного профессионального образования «Академия медицинского
+                                                образования».
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <a href="#" class="article-person__more show-more" data-show-more>
+                                        <span>Читать подробнее</span>
+                                        <svg class="show-more__icon">
+                                            <use xlink:href="./assets/sprite.svg#icon-arrow-down"></use>
+                                        </svg>
+                                    </a>
+                                    <button class="article-person__button button">Записаться на прием</button>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="article-person">
+                                <picture class="article-person__picture">
+                                    <img src="./assets/images/spec-1.png" alt="">
+                                </picture>
+                                <div class="article-person__info">
+                                    <h3 class="article-person__title">Бердюгин Андрей Анатольевич</h3>
+                                    <p class="article-person__description">врач-офтальмолог, высшая квалификационная
+                                        категория</p>
+                                    <p class="article-person__exp">стаж работы — 41 год</p>
+                                    <div class="editor editor--small" data-content>
+                                        <h3>Профиль лечения:</h3>
+                                        <ul>
+                                            <li>
+                                                Атрофия зрительного нерва
+                                            </li>
+                                            <li>
+                                                Аденовирусный конъюнктивит
+                                            </li>
+                                            <li>
+                                                Глаукома
+                                            </li>
+                                            <li>
+                                                Астигматизм
+                                            </li>
+                                            <li>
+                                                Миопия
+                                            </li>
+                                            <li>
+                                                Катаракта
+                                            </li>
+                                            <li>
+                                                Кератит
+                                            </li>
+                                            <li>
+                                                Дальнозоркость
+                                            </li>
+                                        </ul>
+                                        <br>
+                                        <h3>Профиль лечения:</h3>
+                                        <ul>
+                                            <li>
+                                                <span>1982 г.</span> Тюменский медицинский институт. Специальность:
+                                                лечебное дело.
+                                            </li>
+                                            <li>
+                                                <span>2019 г.</span> Автономная некоммерческая организация
+                                                дополнительного профессионального образования «Академия медицинского
+                                                образования».
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <a href="#" class="article-person__more show-more" data-show-more>
+                                        <span>Читать подробнее</span>
+                                        <svg class="show-more__icon">
+                                            <use xlink:href="./assets/sprite.svg#icon-arrow-down"></use>
+                                        </svg>
+                                    </a>
+                                    <button class="article-person__button button">Записаться на прием</button>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="article-person">
+                                <picture class="article-person__picture">
+                                    <img src="./assets/images/spec-2.png" alt="">
+                                </picture>
+                                <div class="article-person__info">
+                                    <h3 class="article-person__title">Крюкова Елена Вячеславовна</h3>
+                                    <p class="article-person__description">врач-офтальмолог, детский офтальмолог,
+                                        Кандидат медицинских наук</p>
+                                    <p class="article-person__exp">стаж работы — 33 года</p>
+                                    <div class="editor editor--small" data-content>
+                                        <h3>Профиль лечения:</h3>
+                                        <ul>
+                                            <li>
+                                                Атрофия зрительного нерва
+                                            </li>
+                                            <li>
+                                                Аденовирусный конъюнктивит
+                                            </li>
+                                            <li>
+                                                Глаукома
+                                            </li>
+                                            <li>
+                                                Астигматизм
+                                            </li>
+                                            <li>
+                                                Миопия
+                                            </li>
+                                            <li>
+                                                Катаракта
+                                            </li>
+                                            <li>
+                                                Кератит
+                                            </li>
+                                            <li>
+                                                Дальнозоркость
+                                            </li>
+                                        </ul>
+                                        <br>
+                                        <h3>Профиль лечения:</h3>
+                                        <ul>
+                                            <li>
+                                                <span>1982 г.</span> Тюменский медицинский институт. Специальность:
+                                                лечебное дело.
+                                            </li>
+                                            <li>
+                                                <span>2019 г.</span> Автономная некоммерческая организация
+                                                дополнительного профессионального образования «Академия медицинского
+                                                образования».
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <a href="#" class="article-person__more show-more" data-show-more>
+                                        <span>Читать подробнее</span>
+                                        <svg class="show-more__icon">
+                                            <use xlink:href="./assets/sprite.svg#icon-arrow-down"></use>
+                                        </svg>
+                                    </a>
+                                    <button class="article-person__button button">Записаться на прием</button>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="article-person">
+                                <picture class="article-person__picture">
+                                    <img src="./assets/images/spec-3.png" alt="">
+                                </picture>
+                                <div class="article-person__info">
+                                    <h3 class="article-person__title">Кирюшина Дарья Андреевна</h3>
+                                    <p class="article-person__description">врач-педиатр</p>
+                                    <p class="article-person__exp">стаж работы — 00 год</p>
+                                    <div class="editor editor--small" data-content>
+                                        <h3>Профиль лечения:</h3>
+                                        <ul>
+                                            <li>
+                                                Атрофия зрительного нерва
+                                            </li>
+                                            <li>
+                                                Аденовирусный конъюнктивит
+                                            </li>
+                                            <li>
+                                                Глаукома
+                                            </li>
+                                            <li>
+                                                Астигматизм
+                                            </li>
+                                            <li>
+                                                Миопия
+                                            </li>
+                                            <li>
+                                                Катаракта
+                                            </li>
+                                            <li>
+                                                Кератит
+                                            </li>
+                                            <li>
+                                                Дальнозоркость
+                                            </li>
+                                        </ul>
+                                        <br>
+                                        <h3>Профиль лечения:</h3>
+                                        <ul>
+                                            <li>
+                                                <span>1982 г.</span> Тюменский медицинский институт. Специальность:
+                                                лечебное дело.
+                                            </li>
+                                            <li>
+                                                <span>2019 г.</span> Автономная некоммерческая организация
+                                                дополнительного профессионального образования «Академия медицинского
+                                                образования».
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <a href="#" class="article-person__more show-more" data-show-more>
+                                        <span>Читать подробнее</span>
+                                        <svg class="show-more__icon">
+                                            <use xlink:href="./assets/sprite.svg#icon-arrow-down"></use>
+                                        </svg>
+                                    </a>
+                                    <button class="article-person__button button">Записаться на прием</button>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-control mob-hidden">
+                        <button class="swiper-btn swiper-btn-prev">
+                            <svg>
+                                <use xlink:href="./assets/sprite.svg#icon-arrow-right"></use>
+                            </svg>
+                        </button>
+                        <button class="swiper-btn swiper-btn-next">
+                            <svg>
+                                <use xlink:href="./assets/sprite.svg#icon-arrow-right"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="button button--outline desktop-hidden">
+                Перейти к специалистам
+                <svg class="button__icon button__icon--default">
+                    <use xlink:href="./assets/sprite.svg#icon-arrow-pointer"></use>
+                </svg>
+            </a>
+        </div>
+    </section>
+    <section class="section section--light pt-90 pb-100">
+        <div class="container">
+            <div class="head-block mb-40">
+                <h2 class="title">Этапы лечения</h2>
+            </div>
+            <div class="slider slider--pagination slider--relative mbm-30" data-slider="cards" data-slides="4">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <article class="article-timeline">
+                                <p class="article-timeline__number">1</p>
+                                <div class="article-timeline__info">
+                                    <h3 class="article-timeline__title">Тут заголовок желательно в три/две строчки</h3>
+                                    <p class="article-timeline__text">
+                                        Текст поясняющий, и описывающий подробно этап работы, который можно разместить в
+                                        три строчки или в четыре строчки это <span>при наведении</span>
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="article-timeline">
+                                <p class="article-timeline__number">2</p>
+                                <div class="article-timeline__info">
+                                    <h3 class="article-timeline__title">Безболезненное открытие роговичного лоскута</h3>
+                                    <p class="article-timeline__text">
+                                        Текст поясняющий, и описывающий подробно этап работы, который можно разместить в
+                                        три строчки или в четыре строчки это <span>при наведении</span>
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="article-timeline">
+                                <p class="article-timeline__number">3</p>
+                                <div class="article-timeline__info">
+                                    <h3 class="article-timeline__title">Лазер удаляет часть роговицы и корректирует</h3>
+                                    <p class="article-timeline__text">
+                                        Текст поясняющий, и описывающий подробно этап работы, который можно разместить в
+                                        три строчки или в четыре строчки это <span>при наведении</span>
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="article-timeline">
+                                <p class="article-timeline__number">4</p>
+                                <div class="article-timeline__info">
+                                    <h3 class="article-timeline__title">Возвращение роговичного лоскута и нормального
+                                        зрения</h3>
+                                    <p class="article-timeline__text">
+                                        Текст поясняющий, и описывающий подробно этап работы, который можно разместить в
+                                        три строчки или в четыре строчки это <span>при наведении</span>
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="article-timeline">
+                                <p class="article-timeline__number">5</p>
+                                <div class="article-timeline__info">
+                                    <h3 class="article-timeline__title">Тут заголовок желательно в три/две строчки</h3>
+                                    <p class="article-timeline__text">
+                                        Текст поясняющий, и описывающий подробно этап работы, который можно разместить в
+                                        три строчки или в четыре строчки это <span>при наведении</span>
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="article-timeline">
+                                <p class="article-timeline__number">6</p>
+                                <div class="article-timeline__info">
+                                    <h3 class="article-timeline__title">Безболезненное открытие роговичного лоскута</h3>
+                                    <p class="article-timeline__text">
+                                        Текст поясняющий, и описывающий подробно этап работы, который можно разместить в
+                                        три строчки или в четыре строчки это <span>при наведении</span>
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-control mob-hidden">
+                        <button class="swiper-btn swiper-btn-prev">
+                            <svg>
+                                <use xlink:href="./assets/sprite.svg#icon-arrow-right"></use>
+                            </svg>
+                        </button>
+                        <button class="swiper-btn swiper-btn-next">
+                            <svg>
+                                <use xlink:href="./assets/sprite.svg#icon-arrow-right"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section pt-110 pb-110 pbm-60">
+        <div class="container">
+            <div class="head-block mb-40 mbm-30">
+                <h2 class="title">Преимущества метода лечения</h2>
+            </div>
             <div class="features mob-hidden">
                 <article class="article-feature">
                     <div class="article-feature__info">
@@ -186,99 +695,77 @@
     </section>
     <section class="section pb-110 pbm-60">
         <div class="container">
-            <div class="head-block mb-40 mbm-20">
-                <h2 class="title">Категории медицинских услуг</h2>
-                <p class="text">
-                    В нашей клинике офтальмологии мы понимаем, что каждый пациент уникален и имеет различные
-                    потребности.<br>
-                    Поэтому мы предлагаем индивидуальный подход к каждому пациенту.
-                </p>
+            <div class="steps-info" data-tabs>
+                <div class="grid">
+                    <div class="grid__item grid__item--6 grid__item-mob--4">
+                        <div class="head-block mb-32">
+                            <h2 class="title">Подготовка</h2>
+                        </div>
+                        <div class="steps-info__list">
+                            <div class="steps-info__item active" data-tabs-head>
+                                <p class="steps-info__head">1 шаг подготовки</p>
+                            </div>
+                            <div class="steps-info__item" data-tabs-head>
+                                <p class="steps-info__head">2 шаг подготовки</p>
+                            </div>
+                            <div class="steps-info__item" data-tabs-head>
+                                <p class="steps-info__head">3 шаг подготовки</p>
+                            </div>
+                            <div class="steps-info__item" data-tabs-head>
+                                <p class="steps-info__head">4 шаг подготовки</p>
+                            </div>
+                            <div class="steps-info__item" data-tabs-head>
+                                <p class="steps-info__head">5 шаг подготовки</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__item grid__item--2 mob-hidden"></div>
+                    <div class="grid__item grid__item--8 grid__item-mob--4">
+                        <div class="steps-info__content">
+                            <div class="steps-info__element active" data-tabs-element>
+                                <picture class="steps-info__picture">
+                                    <img src="./assets/images/pic-10.png" alt="">
+                                </picture>
+                                <div class="steps-info__info">
+                                    <p class="steps-info__text">
+                                        Здесь описание этапа. Текст рыба: Мы работаем на современном немецком
+                                        оборудовании одного из ведущих мировых производителей (Carl Zeiss Meditac AG,
+                                        Germany). Оборудование данного разработчика является “золотым стандартом” в
+                                        диагностике и лечении заболеваний глаз.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="grid">
-                <div class="grid__item grid__item--4 grid__item-mob--4">
-                    <article class="article-category article-category--visible">
-                        <h3 class="article-category__title">
-                            Прием<br>
-                            офтальмолога
-                        </h3>
-                        <p class="article-category__text">
-                            Разнообразный и богатый опыт рамки и место обучения кадров способствует подготовки и
-                            реализации новых предложений.
-                        </p>
-                        <a href="#" class="article-category__button button button--icon">
-                            <svg class="button__icon">
-                                <use xlink:href="./assets/sprite.svg#icon-arrow-big"></use>
-                            </svg>
-                            <span>Подробнее</span>
-                        </a>
-                        <picture class="article-category__picture">
-                            <img src="./assets/images/pic-5.png" alt="">
+        </div>
+    </section>
+    <section class="section pb-110 pbm-60">
+        <div class="container">
+            <div class="video-block" data-video>
+                <div class="video-block__content" data-video-content>
+                    <div class="video-block__preview">
+                        <picture class="video-block__picture">
+                            <img src="./assets/images/pic-11.jpg" alt="">
                         </picture>
-                    </article>
+                    </div>
+                    <div class="video-block__info">
+                        <button class="video-block__button" type="button">
+                            <svg>
+                                <use xlink:href="./assets/sprite.svg#icon-play"></use>
+                            </svg>
+                        </button>
+                        <p class="video-block__text">
+                            Посмотрите видео<br>
+                            о нашей клиники
+                        </p>
+                    </div>
                 </div>
-                <div class="grid__item grid__item--4 grid__item-mob--4">
-                    <article class="article-category">
-                        <h3 class="article-category__title">
-                            Прием<br>
-                            Педиатра
-                        </h3>
-                        <p class="article-category__text">
-                            Разнообразный и богатый опыт рамки и место обучения кадров способствует подготовки и
-                            реализации новых предложений.
-                        </p>
-                        <a href="#" class="article-category__button button button--icon">
-                            <svg class="button__icon">
-                                <use xlink:href="./assets/sprite.svg#icon-arrow-big"></use>
-                            </svg>
-                            <span>Подробнее</span>
-                        </a>
-                        <picture class="article-category__picture">
-                            <img src="./assets/images/pic-5.png" alt="">
-                        </picture>
-                    </article>
-                </div>
-                <div class="grid__item grid__item--4 grid__item-mob--4">
-                    <article class="article-category">
-                        <h3 class="article-category__title">
-                            Прием<br>
-                            невролога детского
-                        </h3>
-                        <p class="article-category__text">
-                            Разнообразный и богатый опыт рамки и место обучения кадров способствует подготовки и
-                            реализации новых предложений.
-                        </p>
-                        <a href="#" class="article-category__button button button--icon">
-                            <svg class="button__icon">
-                                <use xlink:href="./assets/sprite.svg#icon-arrow-big"></use>
-                            </svg>
-                            <span>Подробнее</span>
-                        </a>
-                        <picture class="article-category__picture">
-                            <img src="./assets/images/pic-6.png" alt="">
-                        </picture>
-                    </article>
-                </div>
-                <div class="grid__item grid__item--4 grid__item-mob--4">
-                    <article class="article-category">
-                        <h3 class="article-category__title">
-                            Аппаратное<br>
-                            лечение детей<br>
-                            и взрослых
-                        </h3>
-                        <p class="article-category__text">
-                            Разнообразный и богатый опыт рамки и место обучения кадров способствует подготовки и
-                            реализации новых предложений.
-                        </p>
-                        <a href="#" class="article-category__button button button--icon">
-                            <svg class="button__icon">
-                                <use xlink:href="./assets/sprite.svg#icon-arrow-big"></use>
-                            </svg>
-                            <span>Подробнее</span>
-                        </a>
-                        <picture class="article-category__picture">
-                            <img src="./assets/images/pic-7.png" alt="">
-                        </picture>
-                    </article>
+                <div class="video-block__video" data-video-video>
+                    <iframe src="https://www.youtube.com/embed/DOzZd13UQ7o?si=MZ6ILviiHDMocS5f"
+                            allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;"
+                            frameborder="0" allowfullscreen=""></iframe>
                 </div>
             </div>
         </div>
@@ -355,423 +842,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-    <section class="section pb-110 pbm-60">
-        <div class="container">
-            <div class="head-block head-block--row mb-40">
-                <h2 class="title">Наши врачи</h2>
-                <a href="#" class="button button--outline mob-hidden">
-                    Перейти к специалистам
-                    <svg class="button__icon button__icon--default">
-                        <use xlink:href="./assets/sprite.svg#icon-arrow-pointer"></use>
-                    </svg>
-                </a>
-            </div>
-            <div class="slider slider--pagination slider--relative mbm-30" data-slider="cards" data-slides="3">
-                <div class="swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <article class="article-person">
-                                <picture class="article-person__picture">
-                                    <img src="./assets/images/spec-1.png" alt="">
-                                </picture>
-                                <div class="article-person__info">
-                                    <h3 class="article-person__title">Бердюгин Андрей Анатольевич</h3>
-                                    <p class="article-person__description">врач-офтальмолог, высшая квалификационная
-                                        категория</p>
-                                    <p class="article-person__exp">стаж работы — 41 год</p>
-                                    <div class="editor editor--small" data-content>
-                                        <h3>Профиль лечения:</h3>
-                                        <ul>
-                                            <li>
-                                                Атрофия зрительного нерва
-                                            </li>
-                                            <li>
-                                                Аденовирусный конъюнктивит
-                                            </li>
-                                            <li>
-                                                Глаукома
-                                            </li>
-                                            <li>
-                                                Астигматизм
-                                            </li>
-                                            <li>
-                                                Миопия
-                                            </li>
-                                            <li>
-                                                Катаракта
-                                            </li>
-                                            <li>
-                                                Кератит
-                                            </li>
-                                            <li>
-                                                Дальнозоркость
-                                            </li>
-                                        </ul>
-                                        <br>
-                                        <h3>Профиль лечения:</h3>
-                                        <ul>
-                                            <li>
-                                                <span>1982 г.</span> Тюменский медицинский институт. Специальность: лечебное дело.
-                                            </li>
-                                            <li>
-                                                <span>2019 г.</span> Автономная некоммерческая организация дополнительного профессионального образования «Академия медицинского образования».
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <a href="#" class="article-person__more show-more" data-show-more>
-                                        <span>Читать подробнее</span>
-                                        <svg class="show-more__icon">
-                                            <use xlink:href="./assets/sprite.svg#icon-arrow-down"></use>
-                                        </svg>
-                                    </a>
-                                    <button class="article-person__button button">Записаться на прием</button>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="swiper-slide">
-                            <article class="article-person">
-                                <picture class="article-person__picture">
-                                    <img src="./assets/images/spec-2.png" alt="">
-                                </picture>
-                                <div class="article-person__info">
-                                    <h3 class="article-person__title">Крюкова Елена Вячеславовна</h3>
-                                    <p class="article-person__description">врач-офтальмолог, детский офтальмолог,
-                                        Кандидат медицинских наук</p>
-                                    <p class="article-person__exp">стаж работы — 33 года</p>
-                                    <div class="editor editor--small" data-content>
-                                        <h3>Профиль лечения:</h3>
-                                        <ul>
-                                            <li>
-                                                Атрофия зрительного нерва
-                                            </li>
-                                            <li>
-                                                Аденовирусный конъюнктивит
-                                            </li>
-                                            <li>
-                                                Глаукома
-                                            </li>
-                                            <li>
-                                                Астигматизм
-                                            </li>
-                                            <li>
-                                                Миопия
-                                            </li>
-                                            <li>
-                                                Катаракта
-                                            </li>
-                                            <li>
-                                                Кератит
-                                            </li>
-                                            <li>
-                                                Дальнозоркость
-                                            </li>
-                                        </ul>
-                                        <br>
-                                        <h3>Профиль лечения:</h3>
-                                        <ul>
-                                            <li>
-                                                <span>1982 г.</span> Тюменский медицинский институт. Специальность: лечебное дело.
-                                            </li>
-                                            <li>
-                                                <span>2019 г.</span> Автономная некоммерческая организация дополнительного профессионального образования «Академия медицинского образования».
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <a href="#" class="article-person__more show-more" data-show-more>
-                                        <span>Читать подробнее</span>
-                                        <svg class="show-more__icon">
-                                            <use xlink:href="./assets/sprite.svg#icon-arrow-down"></use>
-                                        </svg>
-                                    </a>
-                                    <button class="article-person__button button">Записаться на прием</button>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="swiper-slide">
-                            <article class="article-person">
-                                <picture class="article-person__picture">
-                                    <img src="./assets/images/spec-3.png" alt="">
-                                </picture>
-                                <div class="article-person__info">
-                                    <h3 class="article-person__title">Кирюшина Дарья Андреевна</h3>
-                                    <p class="article-person__description">врач-педиатр</p>
-                                    <p class="article-person__exp">стаж работы — 00 год</p>
-                                    <div class="editor editor--small" data-content>
-                                        <h3>Профиль лечения:</h3>
-                                        <ul>
-                                            <li>
-                                                Атрофия зрительного нерва
-                                            </li>
-                                            <li>
-                                                Аденовирусный конъюнктивит
-                                            </li>
-                                            <li>
-                                                Глаукома
-                                            </li>
-                                            <li>
-                                                Астигматизм
-                                            </li>
-                                            <li>
-                                                Миопия
-                                            </li>
-                                            <li>
-                                                Катаракта
-                                            </li>
-                                            <li>
-                                                Кератит
-                                            </li>
-                                            <li>
-                                                Дальнозоркость
-                                            </li>
-                                        </ul>
-                                        <br>
-                                        <h3>Профиль лечения:</h3>
-                                        <ul>
-                                            <li>
-                                                <span>1982 г.</span> Тюменский медицинский институт. Специальность: лечебное дело.
-                                            </li>
-                                            <li>
-                                                <span>2019 г.</span> Автономная некоммерческая организация дополнительного профессионального образования «Академия медицинского образования».
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <a href="#" class="article-person__more show-more" data-show-more>
-                                        <span>Читать подробнее</span>
-                                        <svg class="show-more__icon">
-                                            <use xlink:href="./assets/sprite.svg#icon-arrow-down"></use>
-                                        </svg>
-                                    </a>
-                                    <button class="article-person__button button">Записаться на прием</button>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="swiper-slide">
-                            <article class="article-person">
-                                <picture class="article-person__picture">
-                                    <img src="./assets/images/spec-1.png" alt="">
-                                </picture>
-                                <div class="article-person__info">
-                                    <h3 class="article-person__title">Бердюгин Андрей Анатольевич</h3>
-                                    <p class="article-person__description">врач-офтальмолог, высшая квалификационная
-                                        категория</p>
-                                    <p class="article-person__exp">стаж работы — 41 год</p>
-                                    <div class="editor editor--small" data-content>
-                                        <h3>Профиль лечения:</h3>
-                                        <ul>
-                                            <li>
-                                                Атрофия зрительного нерва
-                                            </li>
-                                            <li>
-                                                Аденовирусный конъюнктивит
-                                            </li>
-                                            <li>
-                                                Глаукома
-                                            </li>
-                                            <li>
-                                                Астигматизм
-                                            </li>
-                                            <li>
-                                                Миопия
-                                            </li>
-                                            <li>
-                                                Катаракта
-                                            </li>
-                                            <li>
-                                                Кератит
-                                            </li>
-                                            <li>
-                                                Дальнозоркость
-                                            </li>
-                                        </ul>
-                                        <br>
-                                        <h3>Профиль лечения:</h3>
-                                        <ul>
-                                            <li>
-                                                <span>1982 г.</span> Тюменский медицинский институт. Специальность: лечебное дело.
-                                            </li>
-                                            <li>
-                                                <span>2019 г.</span> Автономная некоммерческая организация дополнительного профессионального образования «Академия медицинского образования».
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <a href="#" class="article-person__more show-more" data-show-more>
-                                        <span>Читать подробнее</span>
-                                        <svg class="show-more__icon">
-                                            <use xlink:href="./assets/sprite.svg#icon-arrow-down"></use>
-                                        </svg>
-                                    </a>
-                                    <button class="article-person__button button">Записаться на прием</button>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="swiper-slide">
-                            <article class="article-person">
-                                <picture class="article-person__picture">
-                                    <img src="./assets/images/spec-2.png" alt="">
-                                </picture>
-                                <div class="article-person__info">
-                                    <h3 class="article-person__title">Крюкова Елена Вячеславовна</h3>
-                                    <p class="article-person__description">врач-офтальмолог, детский офтальмолог,
-                                        Кандидат медицинских наук</p>
-                                    <p class="article-person__exp">стаж работы — 33 года</p>
-                                    <div class="editor editor--small" data-content>
-                                        <h3>Профиль лечения:</h3>
-                                        <ul>
-                                            <li>
-                                                Атрофия зрительного нерва
-                                            </li>
-                                            <li>
-                                                Аденовирусный конъюнктивит
-                                            </li>
-                                            <li>
-                                                Глаукома
-                                            </li>
-                                            <li>
-                                                Астигматизм
-                                            </li>
-                                            <li>
-                                                Миопия
-                                            </li>
-                                            <li>
-                                                Катаракта
-                                            </li>
-                                            <li>
-                                                Кератит
-                                            </li>
-                                            <li>
-                                                Дальнозоркость
-                                            </li>
-                                        </ul>
-                                        <br>
-                                        <h3>Профиль лечения:</h3>
-                                        <ul>
-                                            <li>
-                                                <span>1982 г.</span> Тюменский медицинский институт. Специальность: лечебное дело.
-                                            </li>
-                                            <li>
-                                                <span>2019 г.</span> Автономная некоммерческая организация дополнительного профессионального образования «Академия медицинского образования».
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <a href="#" class="article-person__more show-more" data-show-more>
-                                        <span>Читать подробнее</span>
-                                        <svg class="show-more__icon">
-                                            <use xlink:href="./assets/sprite.svg#icon-arrow-down"></use>
-                                        </svg>
-                                    </a>
-                                    <button class="article-person__button button">Записаться на прием</button>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="swiper-slide">
-                            <article class="article-person">
-                                <picture class="article-person__picture">
-                                    <img src="./assets/images/spec-3.png" alt="">
-                                </picture>
-                                <div class="article-person__info">
-                                    <h3 class="article-person__title">Кирюшина Дарья Андреевна</h3>
-                                    <p class="article-person__description">врач-педиатр</p>
-                                    <p class="article-person__exp">стаж работы — 00 год</p>
-                                    <div class="editor editor--small" data-content>
-                                        <h3>Профиль лечения:</h3>
-                                        <ul>
-                                            <li>
-                                                Атрофия зрительного нерва
-                                            </li>
-                                            <li>
-                                                Аденовирусный конъюнктивит
-                                            </li>
-                                            <li>
-                                                Глаукома
-                                            </li>
-                                            <li>
-                                                Астигматизм
-                                            </li>
-                                            <li>
-                                                Миопия
-                                            </li>
-                                            <li>
-                                                Катаракта
-                                            </li>
-                                            <li>
-                                                Кератит
-                                            </li>
-                                            <li>
-                                                Дальнозоркость
-                                            </li>
-                                        </ul>
-                                        <br>
-                                        <h3>Профиль лечения:</h3>
-                                        <ul>
-                                            <li>
-                                                <span>1982 г.</span> Тюменский медицинский институт. Специальность: лечебное дело.
-                                            </li>
-                                            <li>
-                                                <span>2019 г.</span> Автономная некоммерческая организация дополнительного профессионального образования «Академия медицинского образования».
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <a href="#" class="article-person__more show-more" data-show-more>
-                                        <span>Читать подробнее</span>
-                                        <svg class="show-more__icon">
-                                            <use xlink:href="./assets/sprite.svg#icon-arrow-down"></use>
-                                        </svg>
-                                    </a>
-                                    <button class="article-person__button button">Записаться на прием</button>
-                                </div>
-                            </article>
-                        </div>
-                    </div>
-                    <div class="swiper-pagination"></div>
-                    <div class="swiper-control mob-hidden">
-                        <button class="swiper-btn swiper-btn-prev">
-                            <svg>
-                                <use xlink:href="./assets/sprite.svg#icon-arrow-right"></use>
-                            </svg>
-                        </button>
-                        <button class="swiper-btn swiper-btn-next">
-                            <svg>
-                                <use xlink:href="./assets/sprite.svg#icon-arrow-right"></use>
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <a href="#" class="button button--outline desktop-hidden">
-                Перейти к специалистам
-                <svg class="button__icon button__icon--default">
-                    <use xlink:href="./assets/sprite.svg#icon-arrow-pointer"></use>
-                </svg>
-            </a>
-        </div>
-    </section>
-    <section class="section pb-110 pbm-60">
-        <div class="container">
-            <div class="head-block mb-60 mbm-20">
-                <h2 class="title">Наши партнеры</h2>
-            </div>
-            <div class="sponsors">
-                <a href="#" class="sponsors__item">
-                    <img src="./assets/images/logo-1.png" alt="">
-                </a>
-                <a href="#" class="sponsors__item">
-                    <img src="./assets/images/logo-2.png" alt="">
-                </a>
-                <a href="#" class="sponsors__item">
-                    <img src="./assets/images/logo-3.png" alt="">
-                </a>
-                <a href="#" class="sponsors__item">
-                    <img src="./assets/images/logo-4.png" alt="">
-                </a>
-                <a href="#" class="sponsors__item">
-                    <img src="./assets/images/logo-5.png" alt="">
-                </a>
-                <a href="#" class="sponsors__item">
-                    <img src="./assets/images/logo-6.png" alt="">
-                </a>
             </div>
         </div>
     </section>
