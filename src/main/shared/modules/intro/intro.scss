@@ -44,7 +44,9 @@
 
   &__picture {
     margin-right: -21%;
+    margin-top: auto;
     max-height: 560px;
+    width: 100vw;
 
     @include r($mobile) {
       margin-right: -7%;

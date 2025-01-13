@@ -67,4 +67,67 @@
       line-height: 28px;
     }
   }
+
+  &__detail {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 66px 50px;
+    width: 100%;
+    background-color: $white;
+    border-radius: 20px;
+    overflow: hidden;
+
+    @include r($mobile) {
+      padding: 33px 20px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    @include r($mobile) {
+      gap: 20px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  &__text {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 38px;
+    color: $black;
+
+    @include r($mobile) {
+      font-size: 18px;
+      line-height: 22px;
+    }
+
+    &--small {
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 25px;
+      color: #BDBDBD;
+
+      @include r($mobile) {
+        font-size: 14px;
+        line-height: 17px;
+      }
+    }
+
+    &--link {
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
 }
