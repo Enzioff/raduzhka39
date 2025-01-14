@@ -3,7 +3,8 @@
     display: flex;
     flex-direction: column;
     padding: 60px 50px;
-    background: $gradient-primary-light;
+    background-color: $white;
+    background-image: $gradient-primary-light;
     border-radius: 20px;
     overflow: hidden;
   }

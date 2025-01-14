@@ -66,3 +66,13 @@ a {
     margin-bottom: 20px;
   }
 }
+
+*[disabled] {
+  pointer-events: none;
+  opacity: .7;
+}
+
+.text-visible {
+  -webkit-line-clamp: none;
+  line-clamp: none;
+}

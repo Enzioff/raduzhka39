@@ -4,6 +4,7 @@ import Mask from "./mask";
 import MobileMenu from "./mobile-menu";
 import Tabs from "./tabs";
 import Video from "./video";
+import Form from "./form";
 
 class App {
     constructor() {
@@ -18,6 +19,7 @@ class App {
         this.createShowMore()
         this.createTabs()
         this.createVideo()
+        this.createForm()
     }
     
     createSlider = () => {
@@ -53,9 +55,20 @@ class App {
             el.addEventListener('click', (evt) => {
                 evt.preventDefault()
                 const content = el.parentElement.querySelector('[data-content]');
+                const textContent = el.parentElement.querySelector('[data-text-content]')
                 if (content) {
                     content.classList.toggle('active')
                     if (content.classList.contains('active')) {
+                        textElement.textContent = 'Свернуть'
+                        el.classList.add('active')
+                    } else {
+                        textElement.textContent = innerText
+                        el.classList.remove('active')
+                    }
+                }
+                if (textContent) {
+                    textContent.classList.toggle('text-visible')
+                    if (textContent.classList.contains('text-visible')) {
                         textElement.textContent = 'Свернуть'
                         el.classList.add('active')
                     } else {
@@ -82,6 +95,14 @@ class App {
         
         videos.forEach(video => {
             new Video(video)
+        })
+    }
+    
+    createForm = () => {
+        const forms = document.querySelectorAll('.form');
+        if (!forms) return
+        forms.forEach(form => {
+            new Form(form)
         })
     }
 }

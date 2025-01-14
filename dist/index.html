@@ -1674,7 +1674,7 @@
                                         <h4 class="article-review__head">
                                             Лазерная коррекция зрения
                                         </h4>
-                                        <p class="article-review__text">
+                                        <p class="article-review__text" data-text-content>
                                             Коллектив центра состоит из высококвалифицированных врачей-офтальмологов и
                                             офтальмохирургов, обладающих большим опытом в лечении и диагностике
                                             заболеваний глаз Коллектив центра состоит из высококвалифицированных
@@ -1682,7 +1682,7 @@
                                             офтальмохирургов, обладающих большим опытом в лечении и диагностике
                                             заболеваний глаз
                                         </p>
-                                        <a href="#" class="show-more show-more--small">
+                                        <a href="#" class="show-more show-more--small" data-show-more>
                                             <span>Читать подробнее</span>
                                             <svg class="show-more__icon">
                                                 <use xlink:href="./assets/sprite.svg#icon-arrow-down"></use>
@@ -1733,7 +1733,7 @@
                                         <h4 class="article-review__head">
                                             Лазерная коррекция зрения
                                         </h4>
-                                        <p class="article-review__text">
+                                        <p class="article-review__text" data-text-content>
                                             Коллектив центра состоит из высококвалифицированных врачей-офтальмологов и
                                             офтальмохирургов, обладающих большим опытом в лечении и диагностике
                                             заболеваний глаз Коллектив центра состоит из высококвалифицированных
@@ -1741,7 +1741,7 @@
                                             офтальмохирургов, обладающих большим опытом в лечении и диагностике
                                             заболеваний глаз
                                         </p>
-                                        <a href="#" class="show-more show-more--small">
+                                        <a href="#" class="show-more show-more--small" data-show-more>
                                             <span>Читать подробнее</span>
                                             <svg class="show-more__icon">
                                                 <use xlink:href="./assets/sprite.svg#icon-arrow-down"></use>
@@ -1792,7 +1792,7 @@
                                         <h4 class="article-review__head">
                                             Лазерная коррекция зрения
                                         </h4>
-                                        <p class="article-review__text">
+                                        <p class="article-review__text" data-text-content>
                                             Коллектив центра состоит из высококвалифицированных врачей-офтальмологов и
                                             офтальмохирургов, обладающих большим опытом в лечении и диагностике
                                             заболеваний глаз Коллектив центра состоит из высококвалифицированных
@@ -1800,7 +1800,7 @@
                                             офтальмохирургов, обладающих большим опытом в лечении и диагностике
                                             заболеваний глаз
                                         </p>
-                                        <a href="#" class="show-more show-more--small">
+                                        <a href="#" class="show-more show-more--small" data-show-more>
                                             <span>Читать подробнее</span>
                                             <svg class="show-more__icon">
                                                 <use xlink:href="./assets/sprite.svg#icon-arrow-down"></use>
@@ -1851,7 +1851,7 @@
                                         <h4 class="article-review__head">
                                             Лазерная коррекция зрения
                                         </h4>
-                                        <p class="article-review__text">
+                                        <p class="article-review__text" data-text-content>
                                             Коллектив центра состоит из высококвалифицированных врачей-офтальмологов и
                                             офтальмохирургов, обладающих большим опытом в лечении и диагностике
                                             заболеваний глаз Коллектив центра состоит из высококвалифицированных
@@ -1859,7 +1859,7 @@
                                             офтальмохирургов, обладающих большим опытом в лечении и диагностике
                                             заболеваний глаз
                                         </p>
-                                        <a href="#" class="show-more show-more--small">
+                                        <a href="#" class="show-more show-more--small" data-show-more>
                                             <span>Читать подробнее</span>
                                             <svg class="show-more__icon">
                                                 <use xlink:href="./assets/sprite.svg#icon-arrow-down"></use>
@@ -1893,15 +1893,15 @@
                 <form action="#" class="form">
                     <h2 class="form__title title title--small">Запишитесь на консультацию</h2>
                     <label class="form__item">
-                        <input class="input" type="text" placeholder="Ваше имя*">
+                        <input class="input" type="text" placeholder="Ваше имя*" name="NAME">
                     </label>
                     <label class="form__item">
-                        <input class="input" type="tel" placeholder="Номер телефона*">
+                        <input class="input" type="tel" placeholder="Номер телефона*" name="TEL">
                     </label>
-                    <textarea class="input input--area" placeholder="Ваш комментарий"></textarea>
+                    <textarea class="input input--area" placeholder="Ваш комментарий" name="COMMENT"></textarea>
                     <button class="button button--big" type="submit">Записаться на консультацию</button>
                     <label class="form__accept">
-                        <input class="checkbox" type="checkbox">
+                        <input class="checkbox" type="checkbox" data-accept-form>
                         <span>Нажимая кнопку вы соглашаетесь с условиями <a
                             href="#">Политики конфиденциальности</a></span>
                     </label>
@@ -1986,16 +1986,17 @@
             <form action="#" class="form form--full">
                 <h2 class="form__title title title--small">Запишитесь на консультацию</h2>
                 <label class="form__item">
-                    <input class="input" type="text" placeholder="Ваше имя*">
+                    <input class="input" type="text" placeholder="Ваше имя*" name="NAME">
                 </label>
                 <label class="form__item">
-                    <input class="input" type="tel" placeholder="Номер телефона*">
+                    <input class="input" type="tel" placeholder="Номер телефона*" name="TEL">
                 </label>
-                <textarea class="input input--area" placeholder="Ваш комментарий"></textarea>
+                <textarea class="input input--area" placeholder="Ваш комментарий" name="COMMENT"></textarea>
                 <button class="button button--big" type="submit">Записаться на консультацию</button>
                 <label class="form__accept">
-                    <input class="checkbox" type="checkbox">
-                    <span>Нажимая кнопку вы соглашаетесь с условиями <a href="#">Политики конфиденциальности</a></span>
+                    <input class="checkbox" type="checkbox" data-accept-form>
+                    <span>Нажимая кнопку вы соглашаетесь с условиями <a
+                        href="#">Политики конфиденциальности</a></span>
                 </label>
             </form>
         </div>
@@ -2007,6 +2008,15 @@
                 Данные успешно отправлены.<br>
                 Менеджер свяжется с вами в<br>
                 ближайшее время.
+            </p>
+            <button class="button" data-fancybox-close>Вернуться назад</button>
+        </div>
+    </div>
+    <div class="success-modal" id="error">
+        <div class="success-modal__wrapper">
+            <h2 class="success-modal__title title title--small">Ошибка</h2>
+            <p class="success-modal__text text">
+                Ошибка
             </p>
             <button class="button" data-fancybox-close>Вернуться назад</button>
         </div>

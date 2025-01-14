@@ -96,7 +96,7 @@
     display: grid;
     grid-template-columns: minmax(100px, 160px) 1fr;
     gap: 20px;
-    margin-top: auto;
+    height: 100%;
 
     @include r($mobile) {
       gap: 10px;
