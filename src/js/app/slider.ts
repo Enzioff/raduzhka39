@@ -85,7 +85,7 @@ class Slider {
             },
             breakpoints: {
                 1950: {
-                    slidesPerView: 4,
+                    slidesPerView: 3,
                     spaceBetween: 35,
                 },
                 1399: {
