@@ -8,5 +8,21 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+
+    &-desktop {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+
+      @include r($mobile) {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  }
+
+  &__text {
+    display: flex;
+    max-width: 908px;
   }
 }

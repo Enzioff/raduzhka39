@@ -1,7 +1,7 @@
 .container {
   width: 100%;
-  max-width: 1630px;
-  padding: 0 30px;
+  max-width: 1580px;
+  padding: 0 20px;
   margin: 0 auto;
 
   @include r($mobile) {
@@ -14,7 +14,7 @@
   }
 
   &--no-padding {
-    max-width: 1630px;
+    max-width: 1580px;
     padding: 0;
 
     @include r($mobile) {

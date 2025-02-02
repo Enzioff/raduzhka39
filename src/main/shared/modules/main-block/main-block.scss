@@ -1,0 +1,61 @@
+.main-block {
+  display: grid;
+  grid-template-columns: minmax(600px, 1fr) minmax(400px, 630px);
+  gap: 20px;
+  min-height: 690px;
+
+  @include r($mobile) {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-height: auto;
+  }
+
+  &__info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+    min-height: 475px;
+    padding: 140px 26px 60px 60px;
+    background: linear-gradient(246.46deg, #F0F1FE 0%, #FDFEFF 47%, #EEEFFE 100%),
+    linear-gradient(246.46deg, #F1F2F6 0%, #FDFEFF 47%, #F1F2F6 100%);
+    border-radius: 20px;
+    overflow: hidden;
+
+    @include r($mobile) {
+      padding: 70px 20px 40px 20px;
+      background: linear-gradient(246.46deg, #F0F1FE 0%, #FDFEFF 47%, #EEEFFE 100%),
+      linear-gradient(246.46deg, #F1F2F6 0%, #FDFEFF 47%, #F1F2F6 100%);
+    }
+  }
+
+  &__title {
+    margin-top: auto;
+  }
+
+  &__slider {
+    display: flex;
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+
+    @include r($mobile) {
+      height: 358px;
+    }
+  }
+
+  &__picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+    img {
+      @include coverFull();
+    }
+  }
+}

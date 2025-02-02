@@ -14,6 +14,43 @@
     }
   }
 
+  &--light {
+    .swiper-btn {
+      background-color: #F1F2F6;
+
+      svg {
+        fill: $primary;
+      }
+    }
+  }
+
+  &--control {
+    .swiper-control {
+      top: initial;
+      left: 20px;
+      right: 20px;
+      bottom: 20px;
+      justify-content: space-between;
+      gap: 18px;
+      width: auto;
+      transform: none;
+      pointer-events: auto;
+
+      @include r($mobile) {
+        position: absolute;
+        justify-content: center;
+      }
+    }
+  }
+
+  &--mob-visible {
+    .swiper {
+      @include r($mobile) {
+        overflow: visible;
+      }
+    }
+  }
+
   &--pagination {
     .swiper {
       display: flex;
@@ -27,18 +64,30 @@
 
     .swiper-pagination {
       position: static;
-      margin: 0 auto;
+      justify-content: center;
+      margin: 0;
       transform: none;
 
       &-bullet {
         width: 8px;
         height: 8px;
-        background-color: $gray-light;
+        background-color: #F1F2F6;
+        cursor: pointer;
 
         &-active {
-          width: 40px;
-          background-color: $violet;
+          width: 60px;
+          background-color: $primary;
+          cursor: auto;
         }
+      }
+    }
+
+    &-dark {
+      .swiper-pagination-bullet {
+        background-color: rgba(#000, .3);
+      }
+      .swiper-pagination-bullet-active {
+        background-color: $primary;
       }
     }
   }
@@ -86,6 +135,12 @@
       pointer-events: auto;
     }
   }
+}
+
+.swiper-navigation {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .swiper-pagination {
@@ -153,8 +208,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 64px;
-    height: 64px;
+    width: 44px;
+    height: 44px;
     border-radius: 50%;
     cursor: pointer;
     pointer-events: auto;
@@ -162,8 +217,8 @@
 
     svg {
       display: flex;
-      width: 12px;
-      height: 12px;
+      width: 8px;
+      height: 8px;
       fill: $white;
     }
 

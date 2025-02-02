@@ -1,22 +1,30 @@
 .breadcrumbs {
+  position: absolute;
+  top: 40px;
+  left: 60px;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 14px;
+  gap: 8px;
+
+  @include r($mobile) {
+    top: 20px;
+    left: 20px;
+  }
 
   &__link {
     position: relative;
     display: flex;
     align-items: center;
-    gap: 14px;
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 34px;
-    color: $white;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    color: $gray;
 
     @include r($mobile) {
-      font-size: 12px;
-      line-height: 22px;
+      font-size: 10px;
+      line-height: 12px;
     }
 
     &:not(:first-child) {
@@ -24,10 +32,13 @@
         content: '/';
       }
     }
+  }
 
-    a {
-      font-weight: 400;
-      text-decoration: underline;
+  a.breadcrumbs__link {
+    opacity: .4;
+
+    &:hover {
+      opacity: 1;
     }
   }
 }

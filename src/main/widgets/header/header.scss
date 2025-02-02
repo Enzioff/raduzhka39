@@ -11,42 +11,14 @@
     gap: 20px;
   }
 
-  &__menu {
+  &__info {
     display: flex;
     align-items: center;
-    gap: 12px;
-    padding: 12px 20px;
-    border: 2px solid $violet;
-    border-radius: 40px;
+    gap: 30px;
+  }
 
-    &.active {
-      background-color: $violet;
+  &__menu {
 
-      .header__text {
-        color: $white;
-      }
-
-      .burger {
-        &::before,
-        &::after,
-        &__item {
-          background-color: $white;
-        }
-
-        &__item {
-          top: -5px;
-        }
-
-        &::before {
-          top: 6px;
-          transform: rotate(45deg);
-        }
-        &::after {
-          top: 6px;
-          transform: rotate(-45deg);
-        }
-      }
-    }
   }
 
   &__text {
@@ -54,5 +26,19 @@
     font-weight: 500;
     line-height: 15px;
     color: $violet;
+  }
+
+  &__button {
+    padding: 20px 40px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    border: none;
+  }
+
+  &__place {
+    flex-grow: 1;
   }
 }

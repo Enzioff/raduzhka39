@@ -1,22 +1,50 @@
 <style>
     .temp {
         display: flex;
-        align-items: center;
-        flex-wrap: wrap;
+        flex-direction: column;
         gap: 20px;
-        padding: 0 20px;
+        padding: 40px 0;
     }
     
     .temp__link {
-        font-size: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        font-size: 18px;
+        text-align: center;
+        color: #FFFFFF;
+        border-radius: 15px;
+        overflow: hidden;
+        background-color: #42A5B5;
+    }
+    
+    .temp__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+    
+    .temp__list {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
 </style>
 <div class="temp">
-    <a href="./index.html" class="temp__link">Главная</a>
-    <a href="./specialists.html" class="temp__link">Специалисты</a>
-    <a href="./specialist-single.html" class="temp__link">Карточка специалиста</a>
-    <a href="./services.html" class="temp__link">Услуги</a>
-    <a href="./services-detail.html" class="temp__link">Услуги детальная</a>
-    <a href="./about.html" class="temp__link">О мед центре</a>
-    <a href="./contacts.html" class="temp__link">Контакты</a>
+    <div class="container">
+        <div class="temp__wrapper">
+            <p class="temp__text">Временная секция для навигации по вёрстке</p>
+            <div class="temp__list">
+                <a href="./index.html" class="temp__link">Главная</a>
+                <a href="./specialists.html" class="temp__link">Специалисты</a>
+                <a href="./specialist-single.html" class="temp__link">Карточка специалиста</a>
+                <a href="./services.html" class="temp__link">Услуги</a>
+                <a href="./services-detail.html" class="temp__link">Услуги детальная</a>
+                <a href="./about.html" class="temp__link">О мед центре</a>
+                <a href="./contacts.html" class="temp__link">Контакты</a>
+            </div>
+        </div>
+    </div>
 </div>

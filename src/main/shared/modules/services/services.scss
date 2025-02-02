@@ -22,6 +22,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 20px;
     padding: 26px 0;
     border-bottom: 1px solid $gray-light;
 
@@ -38,9 +39,8 @@
   }
 
   &__text {
-    @include calc-max-width(1270, 1570);
     font-size: 26px;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 33px;
     color: $gray;
 
@@ -52,10 +52,11 @@
   }
 
   &__price {
-    font-size: 32px;
+    flex-shrink: 0;
+    font-size: 40px;
     font-weight: 600;
-    line-height: 40px;
-    color: $black;
+    line-height: 51px;
+    color: $primary;
 
     @include r($mobile) {
       font-size: 22px;

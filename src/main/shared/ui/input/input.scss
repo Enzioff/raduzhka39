@@ -1,14 +1,15 @@
 .input {
   display: flex;
   width: 100%;
-  padding: 30px;
+  padding: 28px 30px;
   font-size: 18px;
   font-weight: 400;
   line-height: 22px;
   color: $gray;
-  border-radius: 100px;
+  border-radius: 10px;
   overflow: hidden;
   background-color: $white;
+  border: 1px solid #ECECEC;
 
   @include r($mobile) {
     padding: 20px;
@@ -19,7 +20,19 @@
 
   &--area {
     min-height: 170px;
-    padding: 28px 30px;
-    border-radius: 20px;
+    border-radius: 10px;
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+      width: 5px;
+      border-radius: 10px;
+    }
+    &::-webkit-scrollbar-track {
+      background: #F5F8FF;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: $primary;
+      border-radius: 10px;
+    }
   }
 }

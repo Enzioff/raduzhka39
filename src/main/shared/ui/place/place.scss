@@ -1,0 +1,41 @@
+.place {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    background-color: #F4F6FB;
+    border-radius: 100px;
+
+    svg {
+      display: flex;
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    color: $gray-black;
+
+    a {
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 20px;
+      color: $primary;
+      text-decoration: underline;
+      text-underline-position: below;
+    }
+  }
+}

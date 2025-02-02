@@ -1,0 +1,66 @@
+.video-button {
+  position: absolute;
+  top: 40px;
+  left: 54px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  @include r($mobile) {
+    top: 14px;
+    left: 14px;
+  }
+
+  &__play {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 72px;
+    height: 72px;
+    background-color: $primary;
+    border: 6px solid $white;
+    border-radius: 50%;
+    z-index: 1;
+
+    @include r($mobile) {
+      width: 42px;
+      height: 42px;
+      border-width: 4px;
+    }
+  }
+
+  &__icon {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    fill: $white;
+
+    @include r($mobile) {
+      width: 12px;
+      height: 12px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: -66px;
+    padding: 12px 32px 8px;
+    min-width: 202px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    color: $primary;
+    border-radius: 30px;
+    background-color: $white;
+
+    @include r($mobile) {
+      margin-left: -42px;
+      padding: 5px 11px;
+      min-width: 114px;
+      font-size: 10px;
+      font-weight: 500;
+      line-height: 12px;
+    }
+  }
+}

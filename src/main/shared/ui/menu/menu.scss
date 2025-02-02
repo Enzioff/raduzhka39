@@ -1,0 +1,69 @@
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 0;
+  background-color: $white;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: .2s linear;
+
+  @include r($mobile) {
+    padding: 5px 14px;
+  }
+
+  &.active {
+    padding: 12px 20px;
+    z-index: 6;
+
+    @include r($mobile) {
+      padding: 5px 14px;
+    }
+
+    .burger {
+      &::before,
+      &::after {
+        top: 10px;
+        left: 5px;
+        width: 20px;
+
+        @include r($mobile) {
+          top: 9px;
+          left: 3px;
+          width: 16px;
+        }
+      }
+
+      &::before {
+        transform: rotate(45deg);
+      }
+
+      &::after {
+        transform: rotate(-45deg);
+      }
+
+      &__item {
+        opacity: 0;
+      }
+    }
+
+    .menu__text {
+      color: $primary;
+    }
+  }
+
+  &__text {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: $gray-black;
+    transition: .2s linear;
+
+    @include r($mobile) {
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 15px;
+    }
+  }
+}

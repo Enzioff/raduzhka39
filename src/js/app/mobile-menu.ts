@@ -1,68 +1,137 @@
 class MobileMenu {
     menuBtn;
     menu;
-    dropdownHeaders;
-    innerElements;
+    menuWraper;
+    body;
+    contentLinks;
+    content;
+    contentElements;
+    backButtons;
+    activeElementIdx: number;
     
     constructor() {
         this.menuBtn = document.querySelector('.header__menu');
         this.menu = document.querySelector('.mobile-menu');
+        this.body = document.querySelector('body');
         
         if (!this.menuBtn || !this.menu) return
         
-        this.dropdownHeaders = this.menu.querySelectorAll('.mobile-menu__item--dropdown');
-        this.innerElements = Array.from(this.dropdownHeaders).map(el => el.querySelector('.mobile-menu__inner'))
+        this.menuWraper = this.menu.querySelector('.mobile-menu__wrapper');
+        this.contentLinks = this.menu.querySelectorAll('[data-link]')
+        this.contentElements = this.menu.querySelectorAll('[data-element]')
+        this.content = this.menu.querySelector('.mobile-menu__content')
+        this.backButtons = this.menu.querySelectorAll('[data-back]')
+        this.activeElementIdx = null;
+        
         this.init()
     }
     
     init() {
-        this.menuBtn.addEventListener('click', () => {
-            this.toggle(this.menu)
-            this.toggle(this.menuBtn)
-            
-            if (!this.menuBtn.classList.contains('active')) {
-                this.innerElements.forEach(temp => {
-                    temp.classList.remove('active')
-                    const items = temp.querySelectorAll('.mobile-menu__item');
-                    const dropdownEls = Array.from(items).map(el => el.querySelector('.mobile-menu__list'))
-                    
-                    dropdownEls.forEach(dropdownEl => {
-                        if (dropdownEl) {
-                            const parentEl = dropdownEl.parentElement;
-                            parentEl.classList.remove('active');
-                        }
-                    })
-                })
+        window.addEventListener('keydown', (evt) => {
+            if (evt.keyCode === 27) {
+                if (this.menu.classList.contains('active')) {
+                    this.toggleMenu()
+                }
             }
         })
         
-        this.dropdownHeaders.forEach((header) => {
-            header.addEventListener('click', () => {
-                const inner = header.querySelector('.mobile-menu__inner');
-                this.toggle(inner);
+        this.backButtons.forEach(button => {
+            button.addEventListener('click', (evt) => {
+                evt.preventDefault()
+                const text = button.querySelector('span');
+                
+                this.closeElement()
             })
         })
         
-        this.innerElements.forEach(el => {
-            el.addEventListener('click', (evt) => evt.stopPropagation())
-            
-            const returnBtn = el.querySelector('.mobile-menu__back');
-            const items = el.querySelectorAll('.mobile-menu__item');
-            const dropdownEls = Array.from(items).map(el => el.querySelector('.mobile-menu__list'))
-            
-            returnBtn.addEventListener('click', () => {
-                el.classList.remove('active');
-            })
-            dropdownEls.forEach(dropdownEl => {
-                if (dropdownEl) {
-                    const parentEl = dropdownEl.parentElement;
+        this.menuBtn.addEventListener('click', (evt) => {
+            evt.preventDefault();
+            this.toggleMenu()
+        })
+        
+        this.menu.addEventListener('click', (evt) => {
+            evt.preventDefault();
+            evt.stopPropagation();
+            this.toggleMenu()
+        })
+        
+        this.menuWraper.addEventListener('click', (evt) => {
+            evt.stopPropagation();
+        })
+        
+        this.contentLinks.forEach(link => {
+            link.addEventListener('click', (evt) => {
+                evt.preventDefault();
+                const linkIdx = Number(link.getAttribute('data-link'));
+                this.activeElementIdx = linkIdx;
+                this.contentLinks.forEach(temp => temp.classList.remove('active'));
+                this.contentElements.forEach(temp => temp.classList.remove('active'));
+                
+                link.classList.add('active');
+                this.content.classList.add('active')
+                this.contentElements.forEach(el => {
+                    const elIdx = Number(el.getAttribute('data-element'));
                     
-                    parentEl.addEventListener('click', () => {
-                        this.toggle(parentEl)
-                    })
-                }
+                    if (elIdx === linkIdx) {
+                        el.classList.add('active');
+                    }
+                })
             })
         })
+        
+        this.contentElements.forEach(el => {
+            const links = el.querySelectorAll('li');
+            const lists = el.querySelectorAll('.mobile-menu__list--inner')
+            links.forEach(link => {
+                const list = link.querySelector('ul');
+                let timeout: string | number | NodeJS.Timeout = null;
+                if (!list) return
+                
+                link.addEventListener('mouseenter', () => {
+                    clearTimeout(timeout);
+                    lists.forEach(temp => temp.classList.remove('active'));
+                    list.classList.add('active');
+                    link.classList.add('active');
+                })
+                
+                link.addEventListener('mouseleave', () => {
+                    timeout = setTimeout(() => {
+                        list.classList.remove('active');
+                        link.classList.remove('active');
+                    }, 300)
+                })
+            })
+        })
+    }
+    
+    closeElement = () => {
+        this.contentElements.forEach(el => {
+            const elIdx = Number(el.getAttribute('data-element'));
+            
+            if (elIdx === this.activeElementIdx) {
+                el.classList.remove('active');
+            }
+        })
+        this.contentLinks.forEach(link => link.classList.remove('active'));
+        this.content.classList.remove('active');
+    }
+    
+    toggleMenu = () => {
+        this.toggle(this.menuBtn)
+        this.toggle(this.menu)
+        this.body.classList.toggle('fixed')
+        
+        if (!this.menu.classList.contains('active')) {
+            this.contentLinks.forEach(temp => temp.classList.remove('active'));
+            this.contentElements.forEach(el => {
+                const links = el.querySelectorAll('li');
+                const lists = el.querySelectorAll('.mobile-menu__list--inner')
+                lists.forEach(temp => temp.classList.remove('active'));
+                links.forEach(temp => temp.classList.remove('active'));
+                el.classList.remove('active');
+            })
+            this.content.classList.remove('active')
+        }
     }
     
     toggle = (element: Element) => {

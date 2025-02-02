@@ -5,104 +5,112 @@
 <body>
 <%= htmlWebpackPlugin.options.widgets.header %>
 <main class="main">
-    <section class="section section--fluid mb-40 mbm-60">
-        <div class="container container--fluid">
-            <div class="slider" data-slider="default">
-                <div class="swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <article class="article-preview">
-                                <div class="article-preview__info">
-                                    <h2 class="article-preview__title title title--main">Передовые методики диагностики
-                                        и лечения</h2>
-                                    <p class="article-preview__text text">
-                                        Наши специалисты помогут Вам диагностировать, в том числе и на раннем этапе,
-                                        различные заболевания глаз, поставить правильный диагноз и помогут Вам в
-                                        лечении.
-                                    </p>
-                                    <button class="button button--main button--wide-mob" data-fancybox
-                                            data-src="modal-form">Записаться на консультацию
-                                    </button>
-                                </div>
-                                <picture class="article-preview__picture">
-                                    <source srcset="./assets/images/pic-1-mob.png" media="(max-width: 1399px)">
+    <section class="section section--fluid mb-50 mbm-70">
+        <div class="container">
+            <div class="main-block">
+                <div class="main-block__info">
+                    <h1 class="main-block__title title title--main">
+                        Передовые методики<br>
+                        диагностики<br>
+                        и лечения
+                    </h1>
+                    <p class="text mb-30 mbm-10">
+                        Наши специалисты помогут Вам диагностировать, в том числе и на раннем этапе, различные
+                        заболевания глаз, поставить правильный диагноз и помогут Вам в лечении.
+                    </p>
+                    <button class="button">
+                        Записаться на консультацию
+                        <svg class="button__icon button__icon--default">
+                            <use xlink:href="./assets/sprite.svg#icon-arrow-pointer"></use>
+                        </svg>
+                    </button>
+                    <button class="video-button" data-fancybox
+                            data-src="https://rutube.ru/play/embed/e55b678cb3a7b2881c6b6d1f07fd1dab/"
+                            data-type="iframe">
+                        <span class="video-button__play">
+                            <svg class="video-button__icon">
+                                <use xlink:href="./assets/sprite.svg#icon-play"></use>
+                            </svg>
+                        </span>
+                        <span class="video-button__content">
+                            Посмотреть<br>
+                            видео о нас
+                        </span>
+                    </button>
+                </div>
+                <div class="main-block__slider slider slider--control slider--pagination slider--pagination-dark" data-slider="default">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <picture class="main-block__picture">
                                     <img src="./assets/images/pic-1.jpg" alt="">
                                 </picture>
-                            </article>
-                        </div>
-                        <div class="swiper-slide">
-                            <article class="article-preview">
-                                <div class="article-preview__info">
-                                    <h2 class="article-preview__title title title--main">Передовые методики диагностики
-                                        и лечения</h2>
-                                    <p class="article-preview__text text">
-                                        Наши специалисты помогут Вам диагностировать, в том числе и на раннем этапе,
-                                        различные заболевания глаз, поставить правильный диагноз и помогут Вам в
-                                        лечении.
-                                    </p>
-                                    <button class="button button--main button--wide-mob">Записаться на консультацию
-                                    </button>
-                                </div>
-                                <picture class="article-preview__picture">
+                            </div>
+                            <div class="swiper-slide">
+                                <picture class="main-block__picture">
                                     <img src="./assets/images/pic-1.png" alt="">
                                 </picture>
-                            </article>
-                        </div>
-                        <div class="swiper-slide">
-                            <article class="article-preview">
-                                <div class="article-preview__info">
-                                    <h2 class="article-preview__title title title--main">Передовые методики диагностики
-                                        и лечения</h2>
-                                    <p class="article-preview__text text">
-                                        Наши специалисты помогут Вам диагностировать, в том числе и на раннем этапе,
-                                        различные заболевания глаз, поставить правильный диагноз и помогут Вам в
-                                        лечении.
-                                    </p>
-                                    <button class="button button--main button--wide-mob">Записаться на консультацию
-                                    </button>
-                                </div>
-                                <picture class="article-preview__picture">
-                                    <img src="./assets/images/pic-1.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <picture class="main-block__picture">
+                                    <img src="./assets/images/pic-2.png" alt="">
                                 </picture>
-                            </article>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture class="main-block__picture">
+                                    <img src="./assets/images/pic-3.png" alt="">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="swiper-control">
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-navigation mob-hidden">
+                                <button class="swiper-btn swiper-btn-prev">
+                                    <svg>
+                                        <use xlink:href="./assets/sprite.svg#icon-arrow-right"></use>
+                                    </svg>
+                                </button>
+                                <button class="swiper-btn swiper-btn-next">
+                                    <svg>
+                                        <use xlink:href="./assets/sprite.svg#icon-arrow-right"></use>
+                                    </svg>
+                                </button>
+                            </div>
                         </div>
                     </div>
-                    <div class="swiper-pagination"></div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="section pb-110 pbm-60">
+    <section class="section pb-150 pbm-70">
         <div class="container">
-            <div class="features mob-hidden">
+            <div class="features">
                 <article class="article-feature">
                     <div class="article-feature__info">
                         <h2 class="article-feature__title">
-                            Лечитесь у лучших
+                            Лечитесь<br>
+                            у лучших
                         </h2>
                         <p class="article-feature__text">
-                            Входим в ТОП-10 рейтингов порталов ПроДокторов и НаПоправку.ру
+                            Входим в ТОП-10 рейтингов порталов <a href="#">ПроДокторов</a> и <a
+                            href="#">НаПоправку.ру</a>
                         </p>
                     </div>
                     <picture class="article-feature__picture">
                         <img class="article-feature__img" src="./assets/images/pic-2.png" alt="">
-                        <img class="article-feature__img article-feature__img--backdrop" src="./assets/images/pic-2.png"
-                             alt="">
                     </picture>
                 </article>
-                <article class="article-feature article-feature--light">
+                <article class="article-feature article-feature--primary">
                     <div class="article-feature__info">
                         <h2 class="article-feature__title">
                             Получаете оптимальное решение под ситуацию и бюджет
                         </h2>
-                        <p class="article-feature__text">
+                        <p class="article-feature__text article-feature__text--small">
                             Стоимость минимальная
                         </p>
                     </div>
                     <picture class="article-feature__picture">
                         <img class="article-feature__img" src="./assets/images/pic-3.png" alt="">
-                        <img class="article-feature__img article-feature__img--backdrop" src="./assets/images/pic-3.png"
-                             alt="">
                     </picture>
                 </article>
                 <article class="article-feature">
@@ -110,83 +118,20 @@
                         <h2 class="article-feature__title">
                             Знаете, как все будет проходить
                         </h2>
-                        <p class="article-feature__text">
+                        <p class="article-feature__text article-feature__text--small">
                             Менеджер ответит на ваши вопросы
                         </p>
                     </div>
                     <picture class="article-feature__picture">
                         <img class="article-feature__img" src="./assets/images/pic-4.png" alt="">
-                        <img class="article-feature__img article-feature__img--backdrop" src="./assets/images/pic-4.png"
-                             alt="">
                     </picture>
                 </article>
             </div>
-            <div class="slider slider--pagination desktop-hidden" data-slider="cards">
-                <div class="swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <article class="article-feature">
-                                <div class="article-feature__info">
-                                    <h2 class="article-feature__title">
-                                        Лечитесь у лучших
-                                    </h2>
-                                    <p class="article-feature__text">
-                                        Входим в ТОП-10 рейтингов порталов ПроДокторов и НаПоправку.ру
-                                    </p>
-                                </div>
-                                <picture class="article-feature__picture">
-                                    <img class="article-feature__img" src="./assets/images/pic-2.png" alt="">
-                                    <img class="article-feature__img article-feature__img--backdrop"
-                                         src="./assets/images/pic-2.png"
-                                         alt="">
-                                </picture>
-                            </article>
-                        </div>
-                        <div class="swiper-slide">
-                            <article class="article-feature article-feature--light">
-                                <div class="article-feature__info">
-                                    <h2 class="article-feature__title">
-                                        Получаете оптимальное решение под ситуацию и бюджет
-                                    </h2>
-                                    <p class="article-feature__text">
-                                        Стоимость минимальная
-                                    </p>
-                                </div>
-                                <picture class="article-feature__picture">
-                                    <img class="article-feature__img" src="./assets/images/pic-3.png" alt="">
-                                    <img class="article-feature__img article-feature__img--backdrop"
-                                         src="./assets/images/pic-3.png"
-                                         alt="">
-                                </picture>
-                            </article>
-                        </div>
-                        <div class="swiper-slide">
-                            <article class="article-feature">
-                                <div class="article-feature__info">
-                                    <h2 class="article-feature__title">
-                                        Знаете, как все будет проходить
-                                    </h2>
-                                    <p class="article-feature__text">
-                                        Менеджер ответит на ваши вопросы
-                                    </p>
-                                </div>
-                                <picture class="article-feature__picture">
-                                    <img class="article-feature__img" src="./assets/images/pic-4.png" alt="">
-                                    <img class="article-feature__img article-feature__img--backdrop"
-                                         src="./assets/images/pic-4.png"
-                                         alt="">
-                                </picture>
-                            </article>
-                        </div>
-                    </div>
-                    <div class="swiper-pagination"></div>
-                </div>
-            </div>
         </div>
     </section>
-    <section class="section pb-110 pbm-60">
+    <section class="section pb-150 pbm-70">
         <div class="container">
-            <div class="head-block mb-40 mbm-20">
+            <div class="head-block mb-50">
                 <h2 class="title">Категории медицинских услуг</h2>
                 <p class="text">
                     В нашей клинике офтальмологии мы понимаем, что каждый пациент уникален и имеет различные
@@ -196,161 +141,164 @@
             </div>
             <div class="grid">
                 <div class="grid__item grid__item--4 grid__item-mob--4">
-                    <article class="article-category article-category--visible">
-                        <h3 class="article-category__title">
-                            Прием<br>
-                            офтальмолога
-                        </h3>
-                        <p class="article-category__text">
-                            Разнообразный и богатый опыт рамки и место обучения кадров способствует подготовки и
-                            реализации новых предложений.
-                        </p>
-                        <a href="#" class="article-category__button button button--icon">
-                            <svg class="button__icon">
-                                <use xlink:href="./assets/sprite.svg#icon-arrow-big"></use>
-                            </svg>
-                            <span>Подробнее</span>
-                        </a>
-                        <picture class="article-category__picture">
-                            <img src="./assets/images/pic-5.png" alt="">
-                        </picture>
+                    <article class="article-category">
+                        <div class="article-category__preview">
+                            <picture class="article-category__picture">
+                                <img src="./assets/images/pic-5.png" alt="">
+                            </picture>
+                            <a href="#" class="article-category__button button button--icon">
+                                <svg class="button__icon">
+                                    <use xlink:href="./assets/sprite.svg#icon-arrow-big"></use>
+                                </svg>
+                                <span>Подробнее</span>
+                            </a>
+                        </div>
+                        <div class="article-category__info">
+                            <h3 class="article-category__title">
+                                Прием<br>
+                                офтальмолога
+                            </h3>
+                            <p class="article-category__text">
+                                Разнообразный и богатый опыт рамки и место обучения кадров
+                            </p>
+                        </div>
                     </article>
                 </div>
                 <div class="grid__item grid__item--4 grid__item-mob--4">
                     <article class="article-category">
-                        <h3 class="article-category__title">
-                            Прием<br>
-                            Педиатра
-                        </h3>
-                        <p class="article-category__text">
-                            Разнообразный и богатый опыт рамки и место обучения кадров способствует подготовки и
-                            реализации новых предложений.
-                        </p>
-                        <a href="#" class="article-category__button button button--icon">
-                            <svg class="button__icon">
-                                <use xlink:href="./assets/sprite.svg#icon-arrow-big"></use>
-                            </svg>
-                            <span>Подробнее</span>
-                        </a>
-                        <picture class="article-category__picture">
-                            <img src="./assets/images/pic-5.png" alt="">
-                        </picture>
+                        <div class="article-category__preview">
+                            <picture class="article-category__picture">
+                                <img src="./assets/images/pic-5.png" alt="">
+                            </picture>
+                            <a href="#" class="article-category__button button button--icon">
+                                <svg class="button__icon">
+                                    <use xlink:href="./assets/sprite.svg#icon-arrow-big"></use>
+                                </svg>
+                                <span>Подробнее</span>
+                            </a>
+                        </div>
+                        <div class="article-category__info">
+                            <h3 class="article-category__title">
+                                Прием<br>
+                                офтальмолога
+                            </h3>
+                            <p class="article-category__text">
+                                Разнообразный и богатый опыт рамки и место обучения кадров
+                            </p>
+                        </div>
                     </article>
                 </div>
                 <div class="grid__item grid__item--4 grid__item-mob--4">
                     <article class="article-category">
-                        <h3 class="article-category__title">
-                            Прием<br>
-                            невролога детского
-                        </h3>
-                        <p class="article-category__text">
-                            Разнообразный и богатый опыт рамки и место обучения кадров способствует подготовки и
-                            реализации новых предложений.
-                        </p>
-                        <a href="#" class="article-category__button button button--icon">
-                            <svg class="button__icon">
-                                <use xlink:href="./assets/sprite.svg#icon-arrow-big"></use>
-                            </svg>
-                            <span>Подробнее</span>
-                        </a>
-                        <picture class="article-category__picture">
-                            <img src="./assets/images/pic-6.png" alt="">
-                        </picture>
+                        <div class="article-category__preview">
+                            <picture class="article-category__picture">
+                                <img src="./assets/images/pic-5.png" alt="">
+                            </picture>
+                            <a href="#" class="article-category__button button button--icon">
+                                <svg class="button__icon">
+                                    <use xlink:href="./assets/sprite.svg#icon-arrow-big"></use>
+                                </svg>
+                                <span>Подробнее</span>
+                            </a>
+                        </div>
+                        <div class="article-category__info">
+                            <h3 class="article-category__title">
+                                Прием<br>
+                                офтальмолога
+                            </h3>
+                            <p class="article-category__text">
+                                Разнообразный и богатый опыт рамки и место обучения кадров
+                            </p>
+                        </div>
                     </article>
                 </div>
                 <div class="grid__item grid__item--4 grid__item-mob--4">
                     <article class="article-category">
-                        <h3 class="article-category__title">
-                            Аппаратное<br>
-                            лечение детей<br>
-                            и взрослых
-                        </h3>
-                        <p class="article-category__text">
-                            Разнообразный и богатый опыт рамки и место обучения кадров способствует подготовки и
-                            реализации новых предложений.
-                        </p>
-                        <a href="#" class="article-category__button button button--icon">
-                            <svg class="button__icon">
-                                <use xlink:href="./assets/sprite.svg#icon-arrow-big"></use>
-                            </svg>
-                            <span>Подробнее</span>
-                        </a>
-                        <picture class="article-category__picture">
-                            <img src="./assets/images/pic-7.png" alt="">
-                        </picture>
+                        <div class="article-category__preview">
+                            <picture class="article-category__picture">
+                                <img src="./assets/images/pic-5.png" alt="">
+                            </picture>
+                            <a href="#" class="article-category__button button button--icon">
+                                <svg class="button__icon">
+                                    <use xlink:href="./assets/sprite.svg#icon-arrow-big"></use>
+                                </svg>
+                                <span>Подробнее</span>
+                            </a>
+                        </div>
+                        <div class="article-category__info">
+                            <h3 class="article-category__title">
+                                Прием<br>
+                                офтальмолога
+                            </h3>
+                            <p class="article-category__text">
+                                Разнообразный и богатый опыт рамки и место обучения кадров
+                            </p>
+                        </div>
                     </article>
                 </div>
             </div>
         </div>
     </section>
-    <section class="section pb-110 pbm-60">
+    <section class="section pb-110 pbm-70">
         <div class="container">
             <div class="about-block">
                 <div class="about-block__info">
                     <h2 class="about-block__title title">О нашей клинике</h2>
                     <p class="about-block__subtitle text text--big">Работаем с 2010 года</p>
-                    <p class="text">
+                    <p class="about-block__text">
                         В команде нашего медицинского центра работают одни из лучших врачей- офтальмологов г.
                         Калининграда и Калининградской области. Наши специалисты помогут Вам диагностировать, в том
                         числе и на раннем этапе, различные заболевания глаз, поставить правильный диагноз и помогут Вам
                         в лечении.<br>
                         <br>
-                        <br>
                         Медицинский центр охраны зрения «Радужка» оказывает медицинские услуги по специальности
                         «офтальмология». Это специальное направление в медицине, которое занимается диагностикой и
                         лечением различных глазных заболеваний.
                     </p>
+                    <button class="button">
+                        Подробнее о клинике
+                        <svg class="button__icon button__icon--default">
+                            <use xlink:href="./assets/sprite.svg#icon-arrow-pointer"></use>
+                        </svg>
+                    </button>
                 </div>
-                <div class="about-block__slider">
-                    <div class="slider" data-slider="thumbs">
-                        <div class="swiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <picture class="picture">
-                                        <img src="./assets/images/slide-1.png" alt="">
-                                    </picture>
-                                </div>
-                                <div class="swiper-slide">
-                                    <picture class="picture">
-                                        <img src="./assets/images/slide-2.png" alt="">
-                                    </picture>
-                                </div>
-                                <div class="swiper-slide">
-                                    <picture class="picture">
-                                        <img src="./assets/images/slide-3.png" alt="">
-                                    </picture>
-                                </div>
-                                <div class="swiper-slide">
-                                    <picture class="picture">
-                                        <img src="./assets/images/slide-4.png" alt="">
-                                    </picture>
-                                </div>
+                <div class="about-block__slider slider slider--control slider--pagination" data-slider="default">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <picture class="about-block__picture">
+                                    <img src="./assets/images/slide-1.png" alt="">
+                                </picture>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture class="about-block__picture">
+                                    <img src="./assets/images/slide-2.png" alt="">
+                                </picture>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture class="about-block__picture">
+                                    <img src="./assets/images/slide-3.png" alt="">
+                                </picture>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture class="about-block__picture">
+                                    <img src="./assets/images/slide-4.png" alt="">
+                                </picture>
                             </div>
                         </div>
-                    </div>
-                    <div class="slider" data-slider="thumb">
-                        <div class="swiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <picture class="picture picture--slim">
-                                        <img src="./assets/images/slide-1.png" alt="">
-                                    </picture>
-                                </div>
-                                <div class="swiper-slide">
-                                    <picture class="picture picture--slim">
-                                        <img src="./assets/images/slide-2.png" alt="">
-                                    </picture>
-                                </div>
-                                <div class="swiper-slide">
-                                    <picture class="picture picture--slim">
-                                        <img src="./assets/images/slide-3.png" alt="">
-                                    </picture>
-                                </div>
-                                <div class="swiper-slide">
-                                    <picture class="picture picture--slim">
-                                        <img src="./assets/images/slide-4.png" alt="">
-                                    </picture>
-                                </div>
+                        <div class="swiper-control">
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-navigation mob-hidden">
+                                <button class="swiper-btn swiper-btn-prev">
+                                    <svg>
+                                        <use xlink:href="./assets/sprite.svg#icon-arrow-right"></use>
+                                    </svg>
+                                </button>
+                                <button class="swiper-btn swiper-btn-next">
+                                    <svg>
+                                        <use xlink:href="./assets/sprite.svg#icon-arrow-right"></use>
+                                    </svg>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -358,369 +306,314 @@
             </div>
         </div>
     </section>
-    <section class="section pb-110 pbm-60">
+    <section class="section pb-140 pbm-70">
         <div class="container">
-            <div class="head-block head-block--row mb-40">
+            <div class="head-block head-block--row mb-40 mbm-30">
                 <h2 class="title">Наши врачи</h2>
-                <a href="#" class="button button--outline mob-hidden">
+                <a href="#" class="button mob-hidden">
                     Перейти к специалистам
                     <svg class="button__icon button__icon--default">
                         <use xlink:href="./assets/sprite.svg#icon-arrow-pointer"></use>
                     </svg>
                 </a>
             </div>
-            <div class="slider slider--pagination slider--relative mbm-30" data-slider="cards" data-slides="3">
+            <div class="slider slider--light slider--mob-visible slider--pagination slider--relative mbm-30" data-slider="cards"
+                 data-slides="4">
                 <div class="swiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <article class="article-person">
-                                <picture class="article-person__picture">
-                                    <img src="./assets/images/spec-1.png" alt="">
-                                </picture>
+                                <div class="article-person__header">
+                                    <div class="article-person__tag tag">
+                                        <p class="tag__text">Стаж — 41 год</p>
+                                    </div>
+                                    <picture class="article-person__picture">
+                                        <img src="./assets/images/spec-1.png" alt="">
+                                    </picture>
+                                    <a href="#" class="article-person__button button">
+                                        <svg class="article-person__icon">
+                                            <use xlink:href="./assets/sprite.svg#icon-arrow-big"></use>
+                                        </svg>
+                                        <span class="button__content">
+                                            <span>Записаться на прием</span>
+                                            <svg class="button__icon button__icon--default">
+                                                <use xlink:href="./assets/sprite.svg#icon-arrow-pointer"></use>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </div>
                                 <div class="article-person__info">
                                     <h3 class="article-person__title">Бердюгин Андрей Анатольевич</h3>
-                                    <p class="article-person__description">врач-офтальмолог, высшая квалификационная
-                                        категория</p>
-                                    <p class="article-person__exp">стаж работы — 41 год</p>
-                                    <div class="editor editor--small" data-content>
-                                        <h3>Профиль лечения:</h3>
-                                        <ul>
-                                            <li>
-                                                Атрофия зрительного нерва
-                                            </li>
-                                            <li>
-                                                Аденовирусный конъюнктивит
-                                            </li>
-                                            <li>
-                                                Глаукома
-                                            </li>
-                                            <li>
-                                                Астигматизм
-                                            </li>
-                                            <li>
-                                                Миопия
-                                            </li>
-                                            <li>
-                                                Катаракта
-                                            </li>
-                                            <li>
-                                                Кератит
-                                            </li>
-                                            <li>
-                                                Дальнозоркость
-                                            </li>
-                                        </ul>
-                                        <br>
-                                        <h3>Профиль лечения:</h3>
-                                        <ul>
-                                            <li>
-                                                <span>1982 г.</span> Тюменский медицинский институт. Специальность: лечебное дело.
-                                            </li>
-                                            <li>
-                                                <span>2019 г.</span> Автономная некоммерческая организация дополнительного профессионального образования «Академия медицинского образования».
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <a href="#" class="article-person__more show-more" data-show-more>
+                                    <p class="article-person__description">
+                                        врач-офтальмолог,<br>
+                                        высшая квалификационная<br>
+                                        категория
+                                    </p>
+                                    <a href="#" class="article-person__link">
                                         <span>Читать подробнее</span>
-                                        <svg class="show-more__icon">
-                                            <use xlink:href="./assets/sprite.svg#icon-arrow-down"></use>
+                                        <svg>
+                                            <use xlink:href="./assets/sprite.svg#icon-arrow-pointer"></use>
                                         </svg>
                                     </a>
-                                    <button class="article-person__button button">Записаться на прием</button>
                                 </div>
                             </article>
                         </div>
                         <div class="swiper-slide">
                             <article class="article-person">
-                                <picture class="article-person__picture">
-                                    <img src="./assets/images/spec-2.png" alt="">
-                                </picture>
-                                <div class="article-person__info">
-                                    <h3 class="article-person__title">Крюкова Елена Вячеславовна</h3>
-                                    <p class="article-person__description">врач-офтальмолог, детский офтальмолог,
-                                        Кандидат медицинских наук</p>
-                                    <p class="article-person__exp">стаж работы — 33 года</p>
-                                    <div class="editor editor--small" data-content>
-                                        <h3>Профиль лечения:</h3>
-                                        <ul>
-                                            <li>
-                                                Атрофия зрительного нерва
-                                            </li>
-                                            <li>
-                                                Аденовирусный конъюнктивит
-                                            </li>
-                                            <li>
-                                                Глаукома
-                                            </li>
-                                            <li>
-                                                Астигматизм
-                                            </li>
-                                            <li>
-                                                Миопия
-                                            </li>
-                                            <li>
-                                                Катаракта
-                                            </li>
-                                            <li>
-                                                Кератит
-                                            </li>
-                                            <li>
-                                                Дальнозоркость
-                                            </li>
-                                        </ul>
-                                        <br>
-                                        <h3>Профиль лечения:</h3>
-                                        <ul>
-                                            <li>
-                                                <span>1982 г.</span> Тюменский медицинский институт. Специальность: лечебное дело.
-                                            </li>
-                                            <li>
-                                                <span>2019 г.</span> Автономная некоммерческая организация дополнительного профессионального образования «Академия медицинского образования».
-                                            </li>
-                                        </ul>
+                                <div class="article-person__header">
+                                    <div class="article-person__tag tag">
+                                        <p class="tag__text">Стаж — 41 год</p>
                                     </div>
-                                    <a href="#" class="article-person__more show-more" data-show-more>
-                                        <span>Читать подробнее</span>
-                                        <svg class="show-more__icon">
-                                            <use xlink:href="./assets/sprite.svg#icon-arrow-down"></use>
+                                    <picture class="article-person__picture">
+                                        <img src="./assets/images/spec-1.png" alt="">
+                                    </picture>
+                                    <a href="#" class="article-person__button button">
+                                        <svg class="article-person__icon">
+                                            <use xlink:href="./assets/sprite.svg#icon-arrow-big"></use>
                                         </svg>
+                                        <span class="button__content">
+                                            <span>Записаться на прием</span>
+                                            <svg class="button__icon button__icon--default">
+                                                <use xlink:href="./assets/sprite.svg#icon-arrow-pointer"></use>
+                                            </svg>
+                                        </span>
                                     </a>
-                                    <button class="article-person__button button">Записаться на прием</button>
                                 </div>
-                            </article>
-                        </div>
-                        <div class="swiper-slide">
-                            <article class="article-person">
-                                <picture class="article-person__picture">
-                                    <img src="./assets/images/spec-3.png" alt="">
-                                </picture>
-                                <div class="article-person__info">
-                                    <h3 class="article-person__title">Кирюшина Дарья Андреевна</h3>
-                                    <p class="article-person__description">врач-педиатр</p>
-                                    <p class="article-person__exp">стаж работы — 00 год</p>
-                                    <div class="editor editor--small" data-content>
-                                        <h3>Профиль лечения:</h3>
-                                        <ul>
-                                            <li>
-                                                Атрофия зрительного нерва
-                                            </li>
-                                            <li>
-                                                Аденовирусный конъюнктивит
-                                            </li>
-                                            <li>
-                                                Глаукома
-                                            </li>
-                                            <li>
-                                                Астигматизм
-                                            </li>
-                                            <li>
-                                                Миопия
-                                            </li>
-                                            <li>
-                                                Катаракта
-                                            </li>
-                                            <li>
-                                                Кератит
-                                            </li>
-                                            <li>
-                                                Дальнозоркость
-                                            </li>
-                                        </ul>
-                                        <br>
-                                        <h3>Профиль лечения:</h3>
-                                        <ul>
-                                            <li>
-                                                <span>1982 г.</span> Тюменский медицинский институт. Специальность: лечебное дело.
-                                            </li>
-                                            <li>
-                                                <span>2019 г.</span> Автономная некоммерческая организация дополнительного профессионального образования «Академия медицинского образования».
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <a href="#" class="article-person__more show-more" data-show-more>
-                                        <span>Читать подробнее</span>
-                                        <svg class="show-more__icon">
-                                            <use xlink:href="./assets/sprite.svg#icon-arrow-down"></use>
-                                        </svg>
-                                    </a>
-                                    <button class="article-person__button button">Записаться на прием</button>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="swiper-slide">
-                            <article class="article-person">
-                                <picture class="article-person__picture">
-                                    <img src="./assets/images/spec-1.png" alt="">
-                                </picture>
                                 <div class="article-person__info">
                                     <h3 class="article-person__title">Бердюгин Андрей Анатольевич</h3>
-                                    <p class="article-person__description">врач-офтальмолог, высшая квалификационная
-                                        категория</p>
-                                    <p class="article-person__exp">стаж работы — 41 год</p>
-                                    <div class="editor editor--small" data-content>
-                                        <h3>Профиль лечения:</h3>
-                                        <ul>
-                                            <li>
-                                                Атрофия зрительного нерва
-                                            </li>
-                                            <li>
-                                                Аденовирусный конъюнктивит
-                                            </li>
-                                            <li>
-                                                Глаукома
-                                            </li>
-                                            <li>
-                                                Астигматизм
-                                            </li>
-                                            <li>
-                                                Миопия
-                                            </li>
-                                            <li>
-                                                Катаракта
-                                            </li>
-                                            <li>
-                                                Кератит
-                                            </li>
-                                            <li>
-                                                Дальнозоркость
-                                            </li>
-                                        </ul>
-                                        <br>
-                                        <h3>Профиль лечения:</h3>
-                                        <ul>
-                                            <li>
-                                                <span>1982 г.</span> Тюменский медицинский институт. Специальность: лечебное дело.
-                                            </li>
-                                            <li>
-                                                <span>2019 г.</span> Автономная некоммерческая организация дополнительного профессионального образования «Академия медицинского образования».
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <a href="#" class="article-person__more show-more" data-show-more>
+                                    <p class="article-person__description">
+                                        врач-офтальмолог,<br>
+                                        высшая квалификационная<br>
+                                        категория
+                                    </p>
+                                    <a href="#" class="article-person__link">
                                         <span>Читать подробнее</span>
-                                        <svg class="show-more__icon">
-                                            <use xlink:href="./assets/sprite.svg#icon-arrow-down"></use>
+                                        <svg>
+                                            <use xlink:href="./assets/sprite.svg#icon-arrow-pointer"></use>
                                         </svg>
                                     </a>
-                                    <button class="article-person__button button">Записаться на прием</button>
                                 </div>
                             </article>
                         </div>
                         <div class="swiper-slide">
                             <article class="article-person">
-                                <picture class="article-person__picture">
-                                    <img src="./assets/images/spec-2.png" alt="">
-                                </picture>
-                                <div class="article-person__info">
-                                    <h3 class="article-person__title">Крюкова Елена Вячеславовна</h3>
-                                    <p class="article-person__description">врач-офтальмолог, детский офтальмолог,
-                                        Кандидат медицинских наук</p>
-                                    <p class="article-person__exp">стаж работы — 33 года</p>
-                                    <div class="editor editor--small" data-content>
-                                        <h3>Профиль лечения:</h3>
-                                        <ul>
-                                            <li>
-                                                Атрофия зрительного нерва
-                                            </li>
-                                            <li>
-                                                Аденовирусный конъюнктивит
-                                            </li>
-                                            <li>
-                                                Глаукома
-                                            </li>
-                                            <li>
-                                                Астигматизм
-                                            </li>
-                                            <li>
-                                                Миопия
-                                            </li>
-                                            <li>
-                                                Катаракта
-                                            </li>
-                                            <li>
-                                                Кератит
-                                            </li>
-                                            <li>
-                                                Дальнозоркость
-                                            </li>
-                                        </ul>
-                                        <br>
-                                        <h3>Профиль лечения:</h3>
-                                        <ul>
-                                            <li>
-                                                <span>1982 г.</span> Тюменский медицинский институт. Специальность: лечебное дело.
-                                            </li>
-                                            <li>
-                                                <span>2019 г.</span> Автономная некоммерческая организация дополнительного профессионального образования «Академия медицинского образования».
-                                            </li>
-                                        </ul>
+                                <div class="article-person__header">
+                                    <div class="article-person__tag tag">
+                                        <p class="tag__text">Стаж — 41 год</p>
                                     </div>
-                                    <a href="#" class="article-person__more show-more" data-show-more>
+                                    <picture class="article-person__picture">
+                                        <img src="./assets/images/spec-1.png" alt="">
+                                    </picture>
+                                    <a href="#" class="article-person__button button">
+                                        <svg class="article-person__icon">
+                                            <use xlink:href="./assets/sprite.svg#icon-arrow-big"></use>
+                                        </svg>
+                                        <span class="button__content">
+                                            <span>Записаться на прием</span>
+                                            <svg class="button__icon button__icon--default">
+                                                <use xlink:href="./assets/sprite.svg#icon-arrow-pointer"></use>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="article-person__info">
+                                    <h3 class="article-person__title">Бердюгин Андрей Анатольевич</h3>
+                                    <p class="article-person__description">
+                                        врач-офтальмолог,<br>
+                                        высшая квалификационная<br>
+                                        категория
+                                    </p>
+                                    <a href="#" class="article-person__link">
                                         <span>Читать подробнее</span>
-                                        <svg class="show-more__icon">
-                                            <use xlink:href="./assets/sprite.svg#icon-arrow-down"></use>
+                                        <svg>
+                                            <use xlink:href="./assets/sprite.svg#icon-arrow-pointer"></use>
                                         </svg>
                                     </a>
-                                    <button class="article-person__button button">Записаться на прием</button>
                                 </div>
                             </article>
                         </div>
                         <div class="swiper-slide">
                             <article class="article-person">
-                                <picture class="article-person__picture">
-                                    <img src="./assets/images/spec-3.png" alt="">
-                                </picture>
-                                <div class="article-person__info">
-                                    <h3 class="article-person__title">Кирюшина Дарья Андреевна</h3>
-                                    <p class="article-person__description">врач-педиатр</p>
-                                    <p class="article-person__exp">стаж работы — 00 год</p>
-                                    <div class="editor editor--small" data-content>
-                                        <h3>Профиль лечения:</h3>
-                                        <ul>
-                                            <li>
-                                                Атрофия зрительного нерва
-                                            </li>
-                                            <li>
-                                                Аденовирусный конъюнктивит
-                                            </li>
-                                            <li>
-                                                Глаукома
-                                            </li>
-                                            <li>
-                                                Астигматизм
-                                            </li>
-                                            <li>
-                                                Миопия
-                                            </li>
-                                            <li>
-                                                Катаракта
-                                            </li>
-                                            <li>
-                                                Кератит
-                                            </li>
-                                            <li>
-                                                Дальнозоркость
-                                            </li>
-                                        </ul>
-                                        <br>
-                                        <h3>Профиль лечения:</h3>
-                                        <ul>
-                                            <li>
-                                                <span>1982 г.</span> Тюменский медицинский институт. Специальность: лечебное дело.
-                                            </li>
-                                            <li>
-                                                <span>2019 г.</span> Автономная некоммерческая организация дополнительного профессионального образования «Академия медицинского образования».
-                                            </li>
-                                        </ul>
+                                <div class="article-person__header">
+                                    <div class="article-person__tag tag">
+                                        <p class="tag__text">Стаж — 41 год</p>
                                     </div>
-                                    <a href="#" class="article-person__more show-more" data-show-more>
+                                    <picture class="article-person__picture">
+                                        <img src="./assets/images/spec-1.png" alt="">
+                                    </picture>
+                                    <a href="#" class="article-person__button button">
+                                        <svg class="article-person__icon">
+                                            <use xlink:href="./assets/sprite.svg#icon-arrow-big"></use>
+                                        </svg>
+                                        <span class="button__content">
+                                            <span>Записаться на прием</span>
+                                            <svg class="button__icon button__icon--default">
+                                                <use xlink:href="./assets/sprite.svg#icon-arrow-pointer"></use>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="article-person__info">
+                                    <h3 class="article-person__title">Бердюгин Андрей Анатольевич</h3>
+                                    <p class="article-person__description">
+                                        врач-офтальмолог,<br>
+                                        высшая квалификационная<br>
+                                        категория
+                                    </p>
+                                    <a href="#" class="article-person__link">
                                         <span>Читать подробнее</span>
-                                        <svg class="show-more__icon">
-                                            <use xlink:href="./assets/sprite.svg#icon-arrow-down"></use>
+                                        <svg>
+                                            <use xlink:href="./assets/sprite.svg#icon-arrow-pointer"></use>
                                         </svg>
                                     </a>
-                                    <button class="article-person__button button">Записаться на прием</button>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="article-person">
+                                <div class="article-person__header">
+                                    <div class="article-person__tag tag">
+                                        <p class="tag__text">Стаж — 41 год</p>
+                                    </div>
+                                    <picture class="article-person__picture">
+                                        <img src="./assets/images/spec-1.png" alt="">
+                                    </picture>
+                                    <a href="#" class="article-person__button button">
+                                        <svg class="article-person__icon">
+                                            <use xlink:href="./assets/sprite.svg#icon-arrow-big"></use>
+                                        </svg>
+                                        <span class="button__content">
+                                            <span>Записаться на прием</span>
+                                            <svg class="button__icon button__icon--default">
+                                                <use xlink:href="./assets/sprite.svg#icon-arrow-pointer"></use>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="article-person__info">
+                                    <h3 class="article-person__title">Бердюгин Андрей Анатольевич</h3>
+                                    <p class="article-person__description">
+                                        врач-офтальмолог,<br>
+                                        высшая квалификационная<br>
+                                        категория
+                                    </p>
+                                    <a href="#" class="article-person__link">
+                                        <span>Читать подробнее</span>
+                                        <svg>
+                                            <use xlink:href="./assets/sprite.svg#icon-arrow-pointer"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="article-person">
+                                <div class="article-person__header">
+                                    <div class="article-person__tag tag">
+                                        <p class="tag__text">Стаж — 41 год</p>
+                                    </div>
+                                    <picture class="article-person__picture">
+                                        <img src="./assets/images/spec-1.png" alt="">
+                                    </picture>
+                                    <a href="#" class="article-person__button button">
+                                        <svg class="article-person__icon">
+                                            <use xlink:href="./assets/sprite.svg#icon-arrow-big"></use>
+                                        </svg>
+                                        <span class="button__content">
+                                            <span>Записаться на прием</span>
+                                            <svg class="button__icon button__icon--default">
+                                                <use xlink:href="./assets/sprite.svg#icon-arrow-pointer"></use>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="article-person__info">
+                                    <h3 class="article-person__title">Бердюгин Андрей Анатольевич</h3>
+                                    <p class="article-person__description">
+                                        врач-офтальмолог,<br>
+                                        высшая квалификационная<br>
+                                        категория
+                                    </p>
+                                    <a href="#" class="article-person__link">
+                                        <span>Читать подробнее</span>
+                                        <svg>
+                                            <use xlink:href="./assets/sprite.svg#icon-arrow-pointer"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="article-person">
+                                <div class="article-person__header">
+                                    <div class="article-person__tag tag">
+                                        <p class="tag__text">Стаж — 41 год</p>
+                                    </div>
+                                    <picture class="article-person__picture">
+                                        <img src="./assets/images/spec-1.png" alt="">
+                                    </picture>
+                                    <a href="#" class="article-person__button button">
+                                        <svg class="article-person__icon">
+                                            <use xlink:href="./assets/sprite.svg#icon-arrow-big"></use>
+                                        </svg>
+                                        <span class="button__content">
+                                            <span>Записаться на прием</span>
+                                            <svg class="button__icon button__icon--default">
+                                                <use xlink:href="./assets/sprite.svg#icon-arrow-pointer"></use>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="article-person__info">
+                                    <h3 class="article-person__title">Бердюгин Андрей Анатольевич</h3>
+                                    <p class="article-person__description">
+                                        врач-офтальмолог,<br>
+                                        высшая квалификационная<br>
+                                        категория
+                                    </p>
+                                    <a href="#" class="article-person__link">
+                                        <span>Читать подробнее</span>
+                                        <svg>
+                                            <use xlink:href="./assets/sprite.svg#icon-arrow-pointer"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="article-person">
+                                <div class="article-person__header">
+                                    <div class="article-person__tag tag">
+                                        <p class="tag__text">Стаж — 41 год</p>
+                                    </div>
+                                    <picture class="article-person__picture">
+                                        <img src="./assets/images/spec-1.png" alt="">
+                                    </picture>
+                                    <a href="#" class="article-person__button button">
+                                        <svg class="article-person__icon">
+                                            <use xlink:href="./assets/sprite.svg#icon-arrow-big"></use>
+                                        </svg>
+                                        <span class="button__content">
+                                            <span>Записаться на прием</span>
+                                            <svg class="button__icon button__icon--default">
+                                                <use xlink:href="./assets/sprite.svg#icon-arrow-pointer"></use>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="article-person__info">
+                                    <h3 class="article-person__title">Бердюгин Андрей Анатольевич</h3>
+                                    <p class="article-person__description">
+                                        врач-офтальмолог,<br>
+                                        высшая квалификационная<br>
+                                        категория
+                                    </p>
+                                    <a href="#" class="article-person__link">
+                                        <span>Читать подробнее</span>
+                                        <svg>
+                                            <use xlink:href="./assets/sprite.svg#icon-arrow-pointer"></use>
+                                        </svg>
+                                    </a>
                                 </div>
                             </article>
                         </div>
@@ -740,7 +633,7 @@
                     </div>
                 </div>
             </div>
-            <a href="#" class="button button--outline desktop-hidden">
+            <a href="#" class="button button--wide-mob desktop-hidden">
                 Перейти к специалистам
                 <svg class="button__icon button__icon--default">
                     <use xlink:href="./assets/sprite.svg#icon-arrow-pointer"></use>
@@ -748,353 +641,372 @@
             </a>
         </div>
     </section>
-    <section class="section pb-110 pbm-60">
-        <div class="container">
-            <div class="head-block mb-60 mbm-20">
-                <h2 class="title">Наши партнеры</h2>
+    <div class="main__section">
+        <section class="section pb-110 pbm-70">
+            <div class="container">
+                <div class="head-block head-block--row-desktop mb-60 mbm-50">
+                    <h2 class="title">Наши партнеры</h2>
+                    <p class="head-block__text text">
+                        В нашей клинике офтальмологии мы понимаем, что каждый пациент уникален и имеет различные
+                        потребности. Поэтому мы предлагаем индивидуальный подход к каждому пациенту.
+                    </p>
+                </div>
+                <div class="sponsors">
+                    <a href="#" class="sponsors__item">
+                        <img src="./assets/images/logo-1.png" alt="">
+                    </a>
+                    <a href="#" class="sponsors__item">
+                        <img src="./assets/images/logo-2.png" alt="">
+                    </a>
+                    <a href="#" class="sponsors__item">
+                        <img src="./assets/images/logo-3.png" alt="">
+                    </a>
+                    <a href="#" class="sponsors__item">
+                        <img src="./assets/images/logo-4.png" alt="">
+                    </a>
+                    <a href="#" class="sponsors__item">
+                        <img src="./assets/images/logo-5.png" alt="">
+                    </a>
+                    <a href="#" class="sponsors__item">
+                        <img src="./assets/images/logo-6.png" alt="">
+                    </a>
+                </div>
             </div>
-            <div class="sponsors">
-                <a href="#" class="sponsors__item">
-                    <img src="./assets/images/logo-1.png" alt="">
-                </a>
-                <a href="#" class="sponsors__item">
-                    <img src="./assets/images/logo-2.png" alt="">
-                </a>
-                <a href="#" class="sponsors__item">
-                    <img src="./assets/images/logo-3.png" alt="">
-                </a>
-                <a href="#" class="sponsors__item">
-                    <img src="./assets/images/logo-4.png" alt="">
-                </a>
-                <a href="#" class="sponsors__item">
-                    <img src="./assets/images/logo-5.png" alt="">
-                </a>
-                <a href="#" class="sponsors__item">
-                    <img src="./assets/images/logo-6.png" alt="">
-                </a>
-            </div>
-        </div>
-    </section>
-    <section class="section pb-110 pbm-60">
-        <div class="container">
-            <div class="head-block head-block--row mb-40 mbm-30">
-                <h2 class="title">Отзывы</h2>
-                <div class="pro-doctor">
-                    <picture class="pro-doctor__picture">
-                        <img src="./assets/images/pro-doctorov.png" alt="">
-                    </picture>
-                    <div class="pro-doctor__footer">
-                        <p class="pro-doctor__text">4.8</p>
-                        <div class="pro-doctor__rating">
-                            <svg class="pro-doctor__icon">
-                                <use xlink:href="./assets/sprite.svg#icon-star"></use>
-                            </svg>
-                            <svg class="pro-doctor__icon">
-                                <use xlink:href="./assets/sprite.svg#icon-star"></use>
-                            </svg>
-                            <svg class="pro-doctor__icon">
-                                <use xlink:href="./assets/sprite.svg#icon-star"></use>
-                            </svg>
-                            <svg class="pro-doctor__icon">
-                                <use xlink:href="./assets/sprite.svg#icon-star"></use>
-                            </svg>
-                            <svg class="pro-doctor__icon">
-                                <use xlink:href="./assets/sprite.svg#icon-star"></use>
-                            </svg>
+        </section>
+        <section class="section pb-110 pbm-60">
+            <div class="container">
+                <div class="head-block head-block--row mb-40 mbm-30">
+                    <h2 class="title">Отзывы</h2>
+                    <div class="pro-doctor">
+                        <picture class="pro-doctor__picture">
+                            <img src="./assets/images/pro-doctorov.png" alt="">
+                        </picture>
+                        <div class="pro-doctor__footer">
+                            <p class="pro-doctor__text">4.8</p>
+                            <div class="pro-doctor__rating">
+                                <svg class="pro-doctor__icon">
+                                    <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                </svg>
+                                <svg class="pro-doctor__icon">
+                                    <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                </svg>
+                                <svg class="pro-doctor__icon">
+                                    <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                </svg>
+                                <svg class="pro-doctor__icon">
+                                    <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                </svg>
+                                <svg class="pro-doctor__icon">
+                                    <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider slider--pagination slider--mob-visible slider--relative" data-slider="cards" data-slides="3">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <article class="article-review">
+                                    <div class="article-review__header">
+                                        <div class="article-review__author">
+                                            <h3 class="article-review__title">Петров Иван</h3>
+                                            <time class="article-review__date" datetime="16.11.2024">16.11.2024</time>
+                                        </div>
+                                        <div class="article-review__rating">
+                                            <svg class="visible">
+                                                <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                            </svg>
+                                            <svg class="visible">
+                                                <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                            </svg>
+                                            <svg class="visible">
+                                                <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                            </svg>
+                                            <svg class="visible">
+                                                <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                            </svg>
+                                            <svg class="visible">
+                                                <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="article-review__content">
+                                        <div class="article-review__picture" data-fancybox
+                                             data-src="./assets/images/review.jpg">
+                                            <img src="./assets/images/review.jpg" alt="">
+                                            <div class="article-review__hover">
+                                                <div class="article-review__icon">
+                                                    <svg>
+                                                        <use xlink:href="./assets/sprite.svg#icon-zoom"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="article-review__info">
+                                            <h4 class="article-review__head">
+                                                Лазерная коррекция зрения
+                                            </h4>
+                                            <p class="article-review__text" data-text-content>
+                                                Коллектив центра состоит из высококвалифицированных врачей-офтальмологов и
+                                                офтальмохирургов, обладающих большим опытом в лечении и диагностике
+                                                заболеваний глаз Коллектив центра состоит из высококвалифицированных
+                                                врачей-офтальмологов и
+                                                офтальмохирургов, обладающих большим опытом в лечении и диагностике
+                                                заболеваний глаз
+                                            </p>
+                                            <a href="#" class="show-more show-more--small" data-show-more>
+                                                <span>Читать подробнее</span>
+                                                <svg class="show-more__icon">
+                                                    <use xlink:href="./assets/sprite.svg#icon-arrow-down"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="swiper-slide">
+                                <article class="article-review">
+                                    <div class="article-review__header">
+                                        <div class="article-review__author">
+                                            <h3 class="article-review__title">Сорокина Ирина</h3>
+                                            <time class="article-review__date" datetime="16.11.2024">16.11.2024</time>
+                                        </div>
+                                        <div class="article-review__rating">
+                                            <svg class="visible">
+                                                <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                            </svg>
+                                            <svg class="visible">
+                                                <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                            </svg>
+                                            <svg class="visible">
+                                                <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                            </svg>
+                                            <svg class="">
+                                                <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                            </svg>
+                                            <svg class="">
+                                                <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="article-review__content">
+                                        <div class="article-review__picture" data-fancybox
+                                             data-src="./assets/images/review.jpg">
+                                            <img src="./assets/images/review.jpg" alt="">
+                                            <div class="article-review__hover">
+                                                <div class="article-review__icon">
+                                                    <svg>
+                                                        <use xlink:href="./assets/sprite.svg#icon-zoom"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="article-review__info">
+                                            <h4 class="article-review__head">
+                                                Лазерная коррекция зрения
+                                            </h4>
+                                            <p class="article-review__text" data-text-content>
+                                                Коллектив центра состоит из высококвалифицированных врачей-офтальмологов и
+                                                офтальмохирургов, обладающих большим опытом в лечении и диагностике
+                                                заболеваний глаз Коллектив центра состоит из высококвалифицированных
+                                                врачей-офтальмологов и
+                                                офтальмохирургов, обладающих большим опытом в лечении и диагностике
+                                                заболеваний глаз
+                                            </p>
+                                            <a href="#" class="show-more show-more--small" data-show-more>
+                                                <span>Читать подробнее</span>
+                                                <svg class="show-more__icon">
+                                                    <use xlink:href="./assets/sprite.svg#icon-arrow-down"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="swiper-slide">
+                                <article class="article-review">
+                                    <div class="article-review__header">
+                                        <div class="article-review__author">
+                                            <h3 class="article-review__title">Голубева Светлана</h3>
+                                            <time class="article-review__date" datetime="16.11.2024">16.11.2024</time>
+                                        </div>
+                                        <div class="article-review__rating">
+                                            <svg class="visible">
+                                                <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                            </svg>
+                                            <svg class="visible">
+                                                <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                            </svg>
+                                            <svg class="visible">
+                                                <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                            </svg>
+                                            <svg class="visible">
+                                                <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                            </svg>
+                                            <svg class="visible">
+                                                <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="article-review__content">
+                                        <div class="article-review__picture" data-fancybox
+                                             data-src="./assets/images/review.jpg">
+                                            <img src="./assets/images/review.jpg" alt="">
+                                            <div class="article-review__hover">
+                                                <div class="article-review__icon">
+                                                    <svg>
+                                                        <use xlink:href="./assets/sprite.svg#icon-zoom"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="article-review__info">
+                                            <h4 class="article-review__head">
+                                                Лазерная коррекция зрения
+                                            </h4>
+                                            <p class="article-review__text" data-text-content>
+                                                Коллектив центра состоит из высококвалифицированных врачей-офтальмологов и
+                                                офтальмохирургов, обладающих большим опытом в лечении и диагностике
+                                                заболеваний глаз Коллектив центра состоит из высококвалифицированных
+                                                врачей-офтальмологов и
+                                                офтальмохирургов, обладающих большим опытом в лечении и диагностике
+                                                заболеваний глаз
+                                            </p>
+                                            <a href="#" class="show-more show-more--small" data-show-more>
+                                                <span>Читать подробнее</span>
+                                                <svg class="show-more__icon">
+                                                    <use xlink:href="./assets/sprite.svg#icon-arrow-down"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="swiper-slide">
+                                <article class="article-review">
+                                    <div class="article-review__header">
+                                        <div class="article-review__author">
+                                            <h3 class="article-review__title">Петров Иван</h3>
+                                            <time class="article-review__date" datetime="16.11.2024">16.11.2024</time>
+                                        </div>
+                                        <div class="article-review__rating">
+                                            <svg class="visible">
+                                                <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                            </svg>
+                                            <svg class="visible">
+                                                <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                            </svg>
+                                            <svg class="visible">
+                                                <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                            </svg>
+                                            <svg class="visible">
+                                                <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                            </svg>
+                                            <svg class="visible">
+                                                <use xlink:href="./assets/sprite.svg#icon-star"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="article-review__content">
+                                        <div class="article-review__picture" data-fancybox
+                                             data-src="./assets/images/review.jpg">
+                                            <img src="./assets/images/review.jpg" alt="">
+                                            <div class="article-review__hover">
+                                                <div class="article-review__icon">
+                                                    <svg>
+                                                        <use xlink:href="./assets/sprite.svg#icon-zoom"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="article-review__info">
+                                            <h4 class="article-review__head">
+                                                Лазерная коррекция зрения
+                                            </h4>
+                                            <p class="article-review__text" data-text-content>
+                                                Коллектив центра состоит из высококвалифицированных врачей-офтальмологов и
+                                                офтальмохирургов, обладающих большим опытом в лечении и диагностике
+                                                заболеваний глаз Коллектив центра состоит из высококвалифицированных
+                                                врачей-офтальмологов и
+                                                офтальмохирургов, обладающих большим опытом в лечении и диагностике
+                                                заболеваний глаз
+                                            </p>
+                                            <a href="#" class="show-more show-more--small" data-show-more>
+                                                <span>Читать подробнее</span>
+                                                <svg class="show-more__icon">
+                                                    <use xlink:href="./assets/sprite.svg#icon-arrow-down"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-control mob-hidden">
+                            <button class="swiper-btn swiper-btn-prev">
+                                <svg>
+                                    <use xlink:href="./assets/sprite.svg#icon-arrow-right"></use>
+                                </svg>
+                            </button>
+                            <button class="swiper-btn swiper-btn-next">
+                                <svg>
+                                    <use xlink:href="./assets/sprite.svg#icon-arrow-right"></use>
+                                </svg>
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="slider slider--pagination slider--relative" data-slider="cards" data-slides="3">
-                <div class="swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <article class="article-review">
-                                <div class="article-review__header">
-                                    <div class="article-review__author">
-                                        <h3 class="article-review__title">Петров Иван</h3>
-                                        <time class="article-review__date" datetime="16.11.2024">16.11.2024</time>
-                                    </div>
-                                    <div class="article-review__rating">
-                                        <svg class="visible">
-                                            <use xlink:href="./assets/sprite.svg#icon-star"></use>
-                                        </svg>
-                                        <svg class="visible">
-                                            <use xlink:href="./assets/sprite.svg#icon-star"></use>
-                                        </svg>
-                                        <svg class="visible">
-                                            <use xlink:href="./assets/sprite.svg#icon-star"></use>
-                                        </svg>
-                                        <svg class="visible">
-                                            <use xlink:href="./assets/sprite.svg#icon-star"></use>
-                                        </svg>
-                                        <svg class="visible">
-                                            <use xlink:href="./assets/sprite.svg#icon-star"></use>
-                                        </svg>
-                                    </div>
-                                </div>
-                                <div class="article-review__content">
-                                    <div class="article-review__picture" data-fancybox
-                                         data-src="./assets/images/review.jpg">
-                                        <img src="./assets/images/review.jpg" alt="">
-                                        <div class="article-review__hover">
-                                            <div class="article-review__icon">
-                                                <svg>
-                                                    <use xlink:href="./assets/sprite.svg#icon-zoom"></use>
-                                                </svg>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="article-review__info">
-                                        <h4 class="article-review__head">
-                                            Лазерная коррекция зрения
-                                        </h4>
-                                        <p class="article-review__text" data-text-content>
-                                            Коллектив центра состоит из высококвалифицированных врачей-офтальмологов и
-                                            офтальмохирургов, обладающих большим опытом в лечении и диагностике
-                                            заболеваний глаз Коллектив центра состоит из высококвалифицированных
-                                            врачей-офтальмологов и
-                                            офтальмохирургов, обладающих большим опытом в лечении и диагностике
-                                            заболеваний глаз
-                                        </p>
-                                        <a href="#" class="show-more show-more--small" data-show-more>
-                                            <span>Читать подробнее</span>
-                                            <svg class="show-more__icon">
-                                                <use xlink:href="./assets/sprite.svg#icon-arrow-down"></use>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </div>
-                            </article>
+        </section>
+        <section class="section pb-60 pbm-70">
+            <div class="container">
+                <div class="feedback">
+                    <form action="#" class="form">
+                        <div class="form__header">
+                            <h2 class="form__title title title--small">Запишитесь на консультацию</h2>
+                            <p class="form__text text">
+                                Наш администратор Виктория перезвонит<br>
+                                вам в  течение 5 минут и поможет с выбором
+                            </p>
                         </div>
-                        <div class="swiper-slide">
-                            <article class="article-review">
-                                <div class="article-review__header">
-                                    <div class="article-review__author">
-                                        <h3 class="article-review__title">Сорокина Ирина</h3>
-                                        <time class="article-review__date" datetime="16.11.2024">16.11.2024</time>
-                                    </div>
-                                    <div class="article-review__rating">
-                                        <svg class="visible">
-                                            <use xlink:href="./assets/sprite.svg#icon-star"></use>
-                                        </svg>
-                                        <svg class="visible">
-                                            <use xlink:href="./assets/sprite.svg#icon-star"></use>
-                                        </svg>
-                                        <svg class="visible">
-                                            <use xlink:href="./assets/sprite.svg#icon-star"></use>
-                                        </svg>
-                                        <svg class="">
-                                            <use xlink:href="./assets/sprite.svg#icon-star"></use>
-                                        </svg>
-                                        <svg class="">
-                                            <use xlink:href="./assets/sprite.svg#icon-star"></use>
-                                        </svg>
-                                    </div>
-                                </div>
-                                <div class="article-review__content">
-                                    <div class="article-review__picture" data-fancybox
-                                         data-src="./assets/images/review.jpg">
-                                        <img src="./assets/images/review.jpg" alt="">
-                                        <div class="article-review__hover">
-                                            <div class="article-review__icon">
-                                                <svg>
-                                                    <use xlink:href="./assets/sprite.svg#icon-zoom"></use>
-                                                </svg>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="article-review__info">
-                                        <h4 class="article-review__head">
-                                            Лазерная коррекция зрения
-                                        </h4>
-                                        <p class="article-review__text" data-text-content>
-                                            Коллектив центра состоит из высококвалифицированных врачей-офтальмологов и
-                                            офтальмохирургов, обладающих большим опытом в лечении и диагностике
-                                            заболеваний глаз Коллектив центра состоит из высококвалифицированных
-                                            врачей-офтальмологов и
-                                            офтальмохирургов, обладающих большим опытом в лечении и диагностике
-                                            заболеваний глаз
-                                        </p>
-                                        <a href="#" class="show-more show-more--small" data-show-more>
-                                            <span>Читать подробнее</span>
-                                            <svg class="show-more__icon">
-                                                <use xlink:href="./assets/sprite.svg#icon-arrow-down"></use>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="swiper-slide">
-                            <article class="article-review">
-                                <div class="article-review__header">
-                                    <div class="article-review__author">
-                                        <h3 class="article-review__title">Голубева Светлана</h3>
-                                        <time class="article-review__date" datetime="16.11.2024">16.11.2024</time>
-                                    </div>
-                                    <div class="article-review__rating">
-                                        <svg class="visible">
-                                            <use xlink:href="./assets/sprite.svg#icon-star"></use>
-                                        </svg>
-                                        <svg class="visible">
-                                            <use xlink:href="./assets/sprite.svg#icon-star"></use>
-                                        </svg>
-                                        <svg class="visible">
-                                            <use xlink:href="./assets/sprite.svg#icon-star"></use>
-                                        </svg>
-                                        <svg class="visible">
-                                            <use xlink:href="./assets/sprite.svg#icon-star"></use>
-                                        </svg>
-                                        <svg class="visible">
-                                            <use xlink:href="./assets/sprite.svg#icon-star"></use>
-                                        </svg>
-                                    </div>
-                                </div>
-                                <div class="article-review__content">
-                                    <div class="article-review__picture" data-fancybox
-                                         data-src="./assets/images/review.jpg">
-                                        <img src="./assets/images/review.jpg" alt="">
-                                        <div class="article-review__hover">
-                                            <div class="article-review__icon">
-                                                <svg>
-                                                    <use xlink:href="./assets/sprite.svg#icon-zoom"></use>
-                                                </svg>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="article-review__info">
-                                        <h4 class="article-review__head">
-                                            Лазерная коррекция зрения
-                                        </h4>
-                                        <p class="article-review__text" data-text-content>
-                                            Коллектив центра состоит из высококвалифицированных врачей-офтальмологов и
-                                            офтальмохирургов, обладающих большим опытом в лечении и диагностике
-                                            заболеваний глаз Коллектив центра состоит из высококвалифицированных
-                                            врачей-офтальмологов и
-                                            офтальмохирургов, обладающих большим опытом в лечении и диагностике
-                                            заболеваний глаз
-                                        </p>
-                                        <a href="#" class="show-more show-more--small" data-show-more>
-                                            <span>Читать подробнее</span>
-                                            <svg class="show-more__icon">
-                                                <use xlink:href="./assets/sprite.svg#icon-arrow-down"></use>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="swiper-slide">
-                            <article class="article-review">
-                                <div class="article-review__header">
-                                    <div class="article-review__author">
-                                        <h3 class="article-review__title">Петров Иван</h3>
-                                        <time class="article-review__date" datetime="16.11.2024">16.11.2024</time>
-                                    </div>
-                                    <div class="article-review__rating">
-                                        <svg class="visible">
-                                            <use xlink:href="./assets/sprite.svg#icon-star"></use>
-                                        </svg>
-                                        <svg class="visible">
-                                            <use xlink:href="./assets/sprite.svg#icon-star"></use>
-                                        </svg>
-                                        <svg class="visible">
-                                            <use xlink:href="./assets/sprite.svg#icon-star"></use>
-                                        </svg>
-                                        <svg class="visible">
-                                            <use xlink:href="./assets/sprite.svg#icon-star"></use>
-                                        </svg>
-                                        <svg class="visible">
-                                            <use xlink:href="./assets/sprite.svg#icon-star"></use>
-                                        </svg>
-                                    </div>
-                                </div>
-                                <div class="article-review__content">
-                                    <div class="article-review__picture" data-fancybox
-                                         data-src="./assets/images/review.jpg">
-                                        <img src="./assets/images/review.jpg" alt="">
-                                        <div class="article-review__hover">
-                                            <div class="article-review__icon">
-                                                <svg>
-                                                    <use xlink:href="./assets/sprite.svg#icon-zoom"></use>
-                                                </svg>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="article-review__info">
-                                        <h4 class="article-review__head">
-                                            Лазерная коррекция зрения
-                                        </h4>
-                                        <p class="article-review__text" data-text-content>
-                                            Коллектив центра состоит из высококвалифицированных врачей-офтальмологов и
-                                            офтальмохирургов, обладающих большим опытом в лечении и диагностике
-                                            заболеваний глаз Коллектив центра состоит из высококвалифицированных
-                                            врачей-офтальмологов и
-                                            офтальмохирургов, обладающих большим опытом в лечении и диагностике
-                                            заболеваний глаз
-                                        </p>
-                                        <a href="#" class="show-more show-more--small" data-show-more>
-                                            <span>Читать подробнее</span>
-                                            <svg class="show-more__icon">
-                                                <use xlink:href="./assets/sprite.svg#icon-arrow-down"></use>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-                    </div>
-                    <div class="swiper-pagination"></div>
-                    <div class="swiper-control mob-hidden">
-                        <button class="swiper-btn swiper-btn-prev">
-                            <svg>
-                                <use xlink:href="./assets/sprite.svg#icon-arrow-right"></use>
+                        <fieldset class="form__wrapper">
+                            <label class="form__item">
+                                <input class="input" type="text" placeholder="Ваше имя*" name="NAME">
+                            </label>
+                            <label class="form__item">
+                                <input class="input" type="tel" placeholder="Номер телефона*" name="TEL">
+                            </label>
+                            <textarea class="input input--area" placeholder="Ваш комментарий" name="COMMENT"></textarea>
+                        </fieldset>
+                        <label class="form__accept">
+                            <input class="checkbox" type="checkbox" data-accept-form>
+                            <span>Нажимая кнопку вы соглашаетесь с условиями <a
+                                href="#">Политики конфиденциальности</a></span>
+                        </label>
+                        <button class="button button--wide-mob button--slim" type="submit">
+                            Записаться на консультацию
+                            <svg class="button__icon button__icon--default">
+                                <use xlink:href="./assets/sprite.svg#icon-arrow-pointer"></use>
                             </svg>
                         </button>
-                        <button class="swiper-btn swiper-btn-next">
-                            <svg>
-                                <use xlink:href="./assets/sprite.svg#icon-arrow-right"></use>
-                            </svg>
-                        </button>
+                    </form>
+                    <div class="feedback__doctor">
+                        <picture class="feedback__picture">
+                            <img src="./assets/images/doctor.jpg" alt="">
+                        </picture>
+                        <div class="feedback__info">
+                            <h3 class="feedback__title title">Виктория Красных</h3>
+                            <p class="feedback__text">Администратор клиники Радужка</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="section pb-110 pbm-60">
-        <div class="container">
-            <div class="feedback">
-                <form action="#" class="form">
-                    <h2 class="form__title title title--small">Запишитесь на консультацию</h2>
-                    <label class="form__item">
-                        <input class="input" type="text" placeholder="Ваше имя*" name="NAME">
-                    </label>
-                    <label class="form__item">
-                        <input class="input" type="tel" placeholder="Номер телефона*" name="TEL">
-                    </label>
-                    <textarea class="input input--area" placeholder="Ваш комментарий" name="COMMENT"></textarea>
-                    <button class="button button--big" type="submit">Записаться на консультацию</button>
-                    <label class="form__accept">
-                        <input class="checkbox" type="checkbox" data-accept-form>
-                        <span>Нажимая кнопку вы соглашаетесь с условиями <a
-                            href="#">Политики конфиденциальности</a></span>
-                    </label>
-                </form>
-                <div class="feedback__doctor">
-                    <picture class="feedback__picture">
-                        <img src="./assets/images/doctor.jpg" alt="">
-                    </picture>
-                    <div class="feedback__info">
-                        <h3 class="feedback__title title">Виктория Красных</h3>
-                        <p class="feedback__text text text--subtitle">Офтальмолог</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
+        <%= htmlWebpackPlugin.options.widgets.footer %>
+    </div>
 </main>
-<%= htmlWebpackPlugin.options.widgets.footer %>
 <%= htmlWebpackPlugin.options.widgets.hidden %>
 <%= htmlWebpackPlugin.options.widgets.temp %>
 </body>

@@ -2,17 +2,18 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: flex-start;
   flex-shrink: 0;
-  gap: 10px;
+  gap: 20px;
   width: 100%;
-  @include calc-max-width(670, 1570);
-  padding: 46px 50px;
+  max-width: 688px;
+  padding: 50px;
   border-radius: 20px;
-  background: $gradient-primary-light;
+  background: $white;
   cursor: auto;
 
   @include r($mobile) {
-    padding: 30px 20px;
+    padding: 40px 20px;
     max-width: 100%;
   }
 
@@ -20,10 +21,25 @@
     max-width: 100%;
   }
 
-  &__title {
-    margin-bottom: 20px;
-    text-align: center;
+  &__header {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 10px;
 
+    @include r($mobile) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  &__title {
     @include r($mobile) {
       font-size: 26px;
       font-weight: 500;
@@ -45,6 +61,7 @@
       font-size: 14px;
       font-weight: 500;
       line-height: 17px;
+      color: $gray;
 
       @include r($mobile) {
         font-size: 12px;

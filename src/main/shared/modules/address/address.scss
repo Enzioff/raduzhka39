@@ -27,4 +27,15 @@
     line-height: 33px;
     text-align: center;
   }
+
+  &--header {
+    flex-shrink: 0;
+
+    .address__link {
+      font-size: 26px;
+      font-weight: 500;
+      line-height: 33px;
+      color: $gray-black;
+    }
+  }
 }

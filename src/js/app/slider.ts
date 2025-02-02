@@ -64,6 +64,7 @@ class Slider {
             },
             pagination: {
                 el: '.swiper-pagination',
+                clickable: true,
             }
         })
     }
@@ -84,12 +85,8 @@ class Slider {
                 el: '.swiper-pagination',
             },
             breakpoints: {
-                1950: {
-                    slidesPerView: 3,
-                    spaceBetween: 35,
-                },
-                1399: {
-                    slidesPerView: 3,
+                1200: {
+                    slidesPerView: this.slidesCount ? this.slidesCount : 4,
                     spaceBetween: 35,
                 },
                 768: {

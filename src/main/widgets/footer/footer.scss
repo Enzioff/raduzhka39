@@ -1,15 +1,12 @@
 .footer {
-  margin: 0 auto;
-  max-width: 1630px;
-  width: 100%;
-  min-height: 348px;
-  background: $gradient-primary-dark;
-  border-radius: 20px;
-  overflow: hidden;
 
   &__wrapper {
     display: flex;
     flex-direction: column;
+    padding: 0 60px;
+    background: #393A41;
+    border-radius: 20px;
+    overflow: hidden;
 
     @include r($mobile) {
       padding: 0 18px 0 20px;
@@ -31,6 +28,17 @@
     }
   }
 
+  &__inner {
+    display: flex;
+    flex-grow: 1;
+
+    @include r($mobile) {
+      margin: 0 auto;
+      gap: 70px;
+      justify-content: space-between;
+    }
+  }
+
   &__logo {
     flex-grow: 1;
 
@@ -48,12 +56,8 @@
     gap: 20px;
 
     @include r($mobile) {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 4px;
       width: 100%;
       max-width: fit-content;
-      margin: 0 auto;
     }
   }
 
@@ -64,9 +68,9 @@
     color: $white;
 
     @include r($mobile) {
-      font-size: 14px;
+      font-size: 12px;
       font-weight: 500;
-      line-height: 24px;
+      line-height: 15px;
     }
   }
 
@@ -81,12 +85,12 @@
     color: $white;
 
     @include r($mobile) {
+      justify-content: space-between;
       gap: 14px;
       width: 100%;
-      font-size: 14px;
+      font-size: 12px;
       font-weight: 500;
-      line-height: 20px;
-      text-align: center;
+      line-height: 15px;
     }
 
     a {
@@ -141,5 +145,9 @@
 
   &__button {
     padding: 16px 35px;
+  }
+
+  &__primary {
+    color: #4EBACB;
   }
 }

@@ -6,8 +6,9 @@ $font-main: "Onest", sans-serif;
 // Цвета
 $white: #FFFFFF;
 $black: #2A2928;
-$primary: #28B3A8;
-$gray: #555555;
+$primary: #42A5B5;
+$gray: #707178;
+$gray-black: #494A51;
 $gray-light: #E1E1E1;
 $gray-white: #D3D3D3;
 $violet: #884190;
@@ -23,7 +24,8 @@ $gradient-primary-dark: linear-gradient(291.03deg, #29958D 0%, #26D0C2 100%);
 $gradient-primary-light: linear-gradient(-291.03deg, rgba(41, 149, 141, 0.15) 0%, rgba(38, 208, 194, 0.15) 100%);
 
 // Размеры
-$mobile: 1399;
+$auxiliary: 1440;
+$mobile: 1199;
 
 
 
@@ -36,6 +38,12 @@ $mobile: 1399;
 
 @mixin rmin($width) {
   @media only screen and (min-width: $width+ "px") {
+    @content
+  }
+}
+
+@mixin hov() {
+  @media (hover: hover) and (pointer: fine) {
     @content
   }
 }

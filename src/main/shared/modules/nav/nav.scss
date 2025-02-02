@@ -1,52 +1,61 @@
 .nav {
-  position: relative;
   display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  flex-grow: 1;
-  justify-content: space-between;
+  flex-direction: column;
   gap: 10px;
 
   &__link {
     display: flex;
     align-items: center;
-    gap: 4px;
-
-    span {
-      display: flex;
-      align-items: center;
-      gap: 4px;
-      font-size: 16px;
-      font-weight: 500;
-      line-height: 20px;
-      transition: .2s linear;
-
-      &:hover {
-        color: $violet;
-
-        .nav__icon {
-          fill: $violet;
-        }
-      }
-    }
-
-    &--dropdown {
-      &:hover {
-        .dropdown {
-          opacity: 1;
-          visibility: visible;
-          transition-delay: 0s;
-        }
-      }
-    }
-  }
-
-  &__icon {
-    display: flex;
-    flex-shrink: 0;
-    width: 6px;
-    height: 6px;
-    fill: $black;
+    gap: 20px;
+    width: 360px;
+    padding: 28px 30px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 23px;
+    letter-spacing: 0.03em;
+    border-radius: 15px;
+    background-color: transparent;
+    color: $gray-black;
     transition: .2s linear;
+
+    @include r($mobile) {
+      padding: 15px 20px;
+      width: 100%;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 20.4px;
+      letter-spacing: 0.03em;
+    }
+
+    svg {
+      display: flex;
+      margin-left: 0;
+      width: 12px;
+      height: 12px;
+      fill: $gray-black;
+      transition: .2s linear;
+    }
+
+    &.active {
+      color: $primary;
+      background-color: $white;
+
+      svg {
+        margin-left: auto;
+        fill: $primary;
+      }
+    }
+
+    &--back {
+      display: none;
+
+      @include r($mobile) {
+        display: flex;
+        padding-left: 0;
+        svg {
+          transform: rotate(180deg);
+        }
+      }
+    }
   }
 }

@@ -5,13 +5,12 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
-  padding: 20px 40px;
+  padding: 23px 40px;
 
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 20px;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 23px;
+  letter-spacing: 0.03em;
   color: $white;
 
   border: 2px solid $primary;
@@ -22,19 +21,18 @@
   cursor: pointer;
 
   @include r($mobile) {
-    font-size: 12px;
-    line-height: 15px;
+    max-width: 255px;
+    gap: 10px;
+    padding: 12px 40px;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
   }
 
   &:hover {
-    color: $violet;
-    background-color: transparent;
-    border-color: $violet;
+    background-color: #4DBED0;
+    border-color: #4DBED0;
     opacity: 1;
-
-    .button__icon {
-      fill: $violet;
-    }
   }
 
   &--outline {
@@ -85,6 +83,7 @@
 
   &__icon {
     display: flex;
+    flex-shrink: 0;
     width: 26px;
     height: 26px;
     transform: rotate(-45deg);
@@ -92,10 +91,16 @@
     transition: .2s linear;
 
     &--default {
-      width: 33px;
-      height: 10px;
+      width: 23px;
+      height: 8px;
       transform: none;
     }
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
   }
 
   &--light {
@@ -106,6 +111,16 @@
   &--wide-mob {
     @include r($mobile) {
       width: 100%;
+      max-width: 100%;
+      padding: 21px 30px;
+    }
+  }
+
+  &--slim {
+    padding: 18px 40px;
+
+    @include r($mobile) {
+      padding: 12px 24px;
     }
   }
 }

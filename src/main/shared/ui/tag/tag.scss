@@ -1,0 +1,27 @@
+.tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+  background-color: $white;
+  border-radius: 100px;
+
+  @include r($mobile) {
+    top: 20px;
+    left: 20px;
+  }
+
+  &--single {
+    position: static;
+  }
+
+  &__text {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    color: $primary;
+  }
+}
