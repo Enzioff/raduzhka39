@@ -48,10 +48,24 @@
     @include r($mobile) {
       padding: 40px 20px;
       width: 100%;
+      overflow-y: auto;
+      &::-webkit-scrollbar {
+        width: 5px;
+        border-radius: 10px;
+      }
+
+      &::-webkit-scrollbar-track {
+        background: #EFF4FF;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: $primary;
+        border-radius: 10px;
+      }
     }
 
     .button {
-      padding: 20px 40px;
+      padding: 20px;
       max-width: 265px;
     }
   }
