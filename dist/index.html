@@ -36,7 +36,7 @@
                         <span>ВС 10:00 - 15:00</span>
                     </p>
                 </div>
-                <button class="header__button button mob-hidden">Записаться на прием</button>
+                <button class="header__button button mob-hidden" data-fancybox data-src="#success">Записаться на прием</button>
                 <div class="header__menu menu">
                     <div class="burger">
                         <span class="burger__item"></span>
@@ -74,6 +74,18 @@
                                     <span>Контакты</span>
                                 </a>
                             </nav>
+                            <div class="place">
+                                <div class="place__icon">
+                                    <svg>
+                                        <use xlink:href="./assets/sprite.svg#icon-pin"></use>
+                                    </svg>
+                                </div>
+                                <p class="place__text">
+                                    г. Калининград,<br>
+                                    ул. Инженерная, д. №3, п. I
+                                    <a href="https://yandex.ru/maps/-/CHe7rG9d" target="_blank">Посмотреть на карте</a>
+                                </p>
+                            </div>
                             <div class="mobile-menu__address address address--header">
                                 <a href="tel:+74012935151" class="address__link">+ 7 (4012) 93-51-51</a>
                                 <p class="address__text">
@@ -81,6 +93,7 @@
                                     <span>ВС 10:00 - 15:00</span>
                                 </p>
                             </div>
+                            <button class="button" data-fancybox data-src="#modal-form">Записаться на прием</button>
                         </div>
                         <div class="mobile-menu__content">
                             <div class="mobile-menu__inner">
@@ -773,7 +786,7 @@
                         Наши специалисты помогут Вам диагностировать, в том числе и на раннем этапе, различные
                         заболевания глаз, поставить правильный диагноз и помогут Вам в лечении.
                     </p>
-                    <button class="button">
+                    <button class="button" data-fancybox data-src="#modal-form">
                         Записаться на консультацию
                         <svg class="button__icon button__icon--default">
                             <use xlink:href="./assets/sprite.svg#icon-arrow-pointer"></use>
@@ -1828,32 +1841,49 @@
     <div class="modal" id="modal-form">
         <div class="modal__wrapper">
             <form action="#" class="form form--full">
-                <h2 class="form__title title title--small">Запишитесь на консультацию</h2>
-                <label class="form__item">
-                    <input class="input" type="text" placeholder="Ваше имя*" name="NAME">
-                </label>
-                <label class="form__item">
-                    <input class="input" type="tel" placeholder="Номер телефона*" name="TEL">
-                </label>
-                <textarea class="input input--area" placeholder="Ваш комментарий" name="COMMENT"></textarea>
-                <button class="button button--big" type="submit">Записаться на консультацию</button>
+                <div class="form__header">
+                    <h2 class="form__title title title--small">Запишитесь на консультацию</h2>
+                    <p class="form__text text">
+                        Наш администратор Виктория перезвонит<br>
+                        вам в течение 5 минут и поможет с выбором
+                    </p>
+                </div>
+                <fieldset class="form__wrapper">
+                    <label class="form__item">
+                        <input class="input" type="text" placeholder="Ваше имя*" name="NAME">
+                    </label>
+                    <label class="form__item">
+                        <input class="input" type="tel" placeholder="Номер телефона*" name="TEL">
+                    </label>
+                    <textarea class="input input--area" placeholder="Ваш комментарий" name="COMMENT"></textarea>
+                </fieldset>
                 <label class="form__accept">
                     <input class="checkbox" type="checkbox" data-accept-form>
                     <span>Нажимая кнопку вы соглашаетесь с условиями <a
                         href="#">Политики конфиденциальности</a></span>
                 </label>
+                <button class="button button--wide-mob button--slim" type="submit">
+                    Записаться на консультацию
+                    <svg class="button__icon button__icon--default">
+                        <use xlink:href="./assets/sprite.svg#icon-arrow-pointer"></use>
+                    </svg>
+                </button>
             </form>
         </div>
     </div>
     <div class="success-modal" id="success">
         <div class="success-modal__wrapper">
-            <h2 class="success-modal__title title title--small">Благодарим за ваше обращение!</h2>
+            <h2 class="success-modal__title title title--small">Благодарим за ваше<br> обращение!</h2>
             <p class="success-modal__text text">
-                Данные успешно отправлены.<br>
-                Менеджер свяжется с вами в<br>
-                ближайшее время.
+                Данные успешно отправлены. Наш<br>
+                администратор свяжется с вами в ближайшее время.
             </p>
-            <button class="button" data-fancybox-close>Вернуться назад</button>
+            <button class="button button--wide-mob" data-fancybox-close>
+                Вернуться на страницу
+                <svg class="button__icon button__icon--default">
+                    <use xlink:href="./assets/sprite.svg#icon-arrow-pointer"></use>
+                </svg>
+            </button>
         </div>
     </div>
     <div class="success-modal" id="error">
@@ -1862,7 +1892,12 @@
             <p class="success-modal__text text">
                 Ошибка
             </p>
-            <button class="button" data-fancybox-close>Вернуться назад</button>
+            <button class="button button--wide-mob" data-fancybox-close>
+                Вернуться на страницу
+                <svg class="button__icon button__icon--default">
+                    <use xlink:href="./assets/sprite.svg#icon-arrow-pointer"></use>
+                </svg>
+            </button>
         </div>
     </div>
 </div>

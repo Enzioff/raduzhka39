@@ -52,6 +52,7 @@
       @include r($mobile) {
         display: flex;
         padding-left: 0;
+        padding-top: 0;
         svg {
           transform: rotate(180deg);
         }

@@ -13,10 +13,21 @@
     background-color: #F4F6FB;
     border-radius: 100px;
 
+    @include r($mobile) {
+      width: 40px;
+      height: 40px;
+      background-color: $white;
+    }
+
     svg {
       display: flex;
       width: 32px;
       height: 32px;
+
+      @include r($mobile) {
+        width: 20px;
+        height: 20px;
+      }
     }
   }
 
@@ -28,6 +39,7 @@
     font-weight: 500;
     line-height: 17px;
     color: $gray-black;
+
 
     a {
       font-size: 16px;

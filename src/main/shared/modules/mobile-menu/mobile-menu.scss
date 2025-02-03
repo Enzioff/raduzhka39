@@ -28,6 +28,11 @@
     height: 670px;
     border-radius: 20px;
     overflow: hidden;
+
+    @include r($mobile) {
+      top: 80px;
+      height: calc(100dvh - 100px);
+    }
   }
 
   &__info {
@@ -43,6 +48,11 @@
     @include r($mobile) {
       padding: 40px 20px;
       width: 100%;
+    }
+
+    .button {
+      padding: 20px 40px;
+      max-width: 265px;
     }
   }
 

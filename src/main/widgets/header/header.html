@@ -23,7 +23,7 @@
                         <span>ВС 10:00 - 15:00</span>
                     </p>
                 </div>
-                <button class="header__button button mob-hidden">Записаться на прием</button>
+                <button class="header__button button mob-hidden" data-fancybox data-src="#success">Записаться на прием</button>
                 <div class="header__menu menu">
                     <div class="burger">
                         <span class="burger__item"></span>
@@ -61,6 +61,18 @@
                                     <span>Контакты</span>
                                 </a>
                             </nav>
+                            <div class="place">
+                                <div class="place__icon">
+                                    <svg>
+                                        <use xlink:href="./assets/sprite.svg#icon-pin"></use>
+                                    </svg>
+                                </div>
+                                <p class="place__text">
+                                    г. Калининград,<br>
+                                    ул. Инженерная, д. №3, п. I
+                                    <a href="https://yandex.ru/maps/-/CHe7rG9d" target="_blank">Посмотреть на карте</a>
+                                </p>
+                            </div>
                             <div class="mobile-menu__address address address--header">
                                 <a href="tel:+74012935151" class="address__link">+ 7 (4012) 93-51-51</a>
                                 <p class="address__text">
@@ -68,6 +80,7 @@
                                     <span>ВС 10:00 - 15:00</span>
                                 </p>
                             </div>
+                            <button class="button" data-fancybox data-src="#modal-form">Записаться на прием</button>
                         </div>
                         <div class="mobile-menu__content">
                             <div class="mobile-menu__inner">
