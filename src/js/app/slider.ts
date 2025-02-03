@@ -87,7 +87,7 @@ class Slider {
             breakpoints: {
                 1200: {
                     slidesPerView: this.slidesCount ? this.slidesCount : 4,
-                    spaceBetween: 35,
+                    spaceBetween: 20,
                 },
                 768: {
                     slidesPerView: this.isAuto ? 'auto' : 2,

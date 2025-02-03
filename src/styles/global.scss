@@ -26,7 +26,7 @@ body {
 
 .main {
   flex-grow: 1;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 .mob-hidden {
@@ -80,4 +80,8 @@ a {
 .text-visible {
   -webkit-line-clamp: none;
   line-clamp: none;
+}
+
+.centered {
+  margin: 0 auto;
 }

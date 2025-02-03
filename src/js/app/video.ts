@@ -4,11 +4,13 @@ class Video {
     videoEl;
     playBtn;
     frame;
+    preview;
     
     constructor(video: Element) {
         this.video = video;
         this.content = this.video.querySelector('[data-video-content]')
         this.videoEl = this.video.querySelector('[data-video-video]')
+        this.preview = this.content.querySelector('.video-block__preview')
         this.playBtn = this.content.querySelector('button')
         this.frame = this.videoEl.querySelector('iframe')
     
@@ -17,7 +19,7 @@ class Video {
     
     init() {
         this.playBtn.addEventListener('click', () => {
-            this.content.classList.add('hidden');
+            this.preview.classList.add('hidden');
             this.videoEl.classList.add('visible');
             const copy = this.frame.cloneNode(true) as HTMLElement;
             this.frame.remove();

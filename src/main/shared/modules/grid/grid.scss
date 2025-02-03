@@ -1,7 +1,7 @@
 .grid {
   display: grid;
   grid-auto-flow: dense;
-  grid-template-columns: repeat(16, minmax(0, 1fr));
+  grid-template-columns: repeat(12, minmax(0, 1fr));
   gap: 30px;
 
   @include r($mobile) {
@@ -13,6 +13,16 @@
 
     @include r($mobile) {
       grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    }
+  }
+
+  &--limit {
+    .grid__item {
+      @include r($mobile) {
+        &:nth-child(1n + 5) {
+          display: none;
+        }
+      }
     }
   }
 

@@ -129,4 +129,16 @@
       }
     }
   }
+
+  &__map {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    overflow: hidden;
+
+    @include r($mobile) {
+      height: 600px;
+    }
+  }
 }

@@ -123,4 +123,18 @@
       padding: 12px 24px;
     }
   }
+
+  &--social {
+    align-items: center;
+    gap: 10px;
+    padding: 20px 40px;
+    text-transform: uppercase;
+
+    svg {
+      display: flex;
+      width: 32px;
+      height: 20px;
+      fill: $white;
+    }
+  }
 }
