@@ -42,11 +42,10 @@ body {
 }
 
 .fixed {
-  padding-right: 17px;
   overflow: hidden;
 
   @include r($mobile) {
-    padding-right: 0;
+    padding-right: 0 !important;
   }
 }
 

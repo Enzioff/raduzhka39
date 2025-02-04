@@ -111,4 +111,25 @@
     linear-gradient(246.46deg, rgba(66, 165, 181, 0.1) 0%, rgba(66, 165, 181, 0.06) 47%, rgba(66, 165, 181, 0.1) 100%);
 
   }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    span {
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 22px;
+      letter-spacing: 0.03em;
+      color: $primary;
+    }
+
+    svg {
+      display: flex;
+      width: 20px;
+      height: 20px;
+      fill: $primary;
+    }
+  }
 }

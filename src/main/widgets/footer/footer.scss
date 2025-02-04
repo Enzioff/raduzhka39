@@ -34,7 +34,7 @@
 
     @include r($mobile) {
       margin: 0 auto;
-      gap: 70px;
+      gap: 20px;
       justify-content: space-between;
     }
   }
@@ -78,6 +78,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    max-width: 315px;
     flex-grow: 1;
     font-size: 16px;
     font-weight: 500;
@@ -102,6 +103,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    flex-shrink: 0;
     gap: 30px;
 
     @include r($mobile) {

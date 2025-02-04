@@ -8,6 +8,7 @@ class MobileMenu {
     contentElements;
     backButtons;
     activeElementIdx: number;
+    scrollbarWidth;
     
     constructor() {
         this.menuBtn = document.querySelector('.header__menu');
@@ -22,6 +23,7 @@ class MobileMenu {
         this.content = this.menu.querySelector('.mobile-menu__content')
         this.backButtons = this.menu.querySelectorAll('[data-back]')
         this.activeElementIdx = null;
+        this.scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
         
         this.init()
     }
@@ -120,6 +122,7 @@ class MobileMenu {
         this.toggle(this.menuBtn)
         this.toggle(this.menu)
         this.body.classList.toggle('fixed')
+        this.body.style.paddingRight = `${this.scrollbarWidth}px`
         
         if (!this.menu.classList.contains('active')) {
             this.contentLinks.forEach(temp => temp.classList.remove('active'));
@@ -131,6 +134,7 @@ class MobileMenu {
                 el.classList.remove('active');
             })
             this.content.classList.remove('active')
+            this.body.style.paddingRight = null
         }
     }
     
