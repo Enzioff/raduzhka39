@@ -15,6 +15,8 @@ class Form {
     successModal;
     errorModal;
     error;
+    captchaStatus: Element;
+    captchaValidate: boolean;
     
     constructor(form: Element) {
         this.form = form;
@@ -45,11 +47,14 @@ class Form {
     
     getData = () => {
         const data = new FormData();
+        this.inputs = [...Array.from(this.form.querySelectorAll('input')), ...Array.from(this.form.querySelectorAll('textarea'))];
         
         this.inputs.forEach((input) => {
             data.append(input.name, input.value);
             
-            this.error = input.value.length <= 2;
+            if (input.tagName === 'INPUT' && input.type !== 'checkbox') {
+                this.error = input.value.length <= 2;
+            }
         })
         
         if (this.error) {
@@ -79,9 +84,30 @@ class Form {
     
     changeButtonVisible = () => {
         if (this.accept) {
-            !this.accept.checked
-                ? this.sendBtn.setAttribute('disabled', '')
-                : this.sendBtn.removeAttribute('disabled');
+            this.captchaStatus = this.form.querySelector('.smart-captcha');
+            this.captchaValidate = false;
+            
+            if (this.captchaStatus) {
+                if (this.captchaStatus.getAttribute('is_invalid')) {
+                    this.captchaValidate = false;
+                } else if (this.captchaStatus.getAttribute('is_valid')) {
+                    this.captchaValidate = true;
+                }
+            }
+            
+            if (this.captchaValidate) {
+                if (!this.accept.checked && !this.captchaValidate) {
+                    this.sendBtn.setAttribute('disabled', '')
+                } else {
+                    this.sendBtn.removeAttribute('disabled')
+                }
+            } else {
+                if (!this.accept.checked) {
+                    this.sendBtn.setAttribute('disabled', '')
+                } else {
+                    this.sendBtn.removeAttribute('disabled')
+                }
+            }
         }
     }
     

@@ -32,7 +32,7 @@ class App {
     
     createFancybox = () => {
         Fancybox.bind('[data-fancybox]', {
-            defaultType: 'inline'
+            defaultType: 'inline',
         })
     }
     

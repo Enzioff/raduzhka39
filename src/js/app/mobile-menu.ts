@@ -1,6 +1,9 @@
+import {Fancybox} from "@fancyapps/ui";
+
 class MobileMenu {
     menuBtn;
     menu;
+    menuContent;
     menuWraper;
     body;
     contentLinks;
@@ -18,6 +21,7 @@ class MobileMenu {
         if (!this.menuBtn || !this.menu) return
         
         this.menuWraper = this.menu.querySelector('.mobile-menu__wrapper');
+        this.menuContent = this.menu.querySelector('.mobile-menu__info');
         this.contentLinks = this.menu.querySelectorAll('[data-link]')
         this.contentElements = this.menu.querySelectorAll('[data-element]')
         this.content = this.menu.querySelector('.mobile-menu__content')
@@ -52,7 +56,6 @@ class MobileMenu {
         })
         
         this.menu.addEventListener('click', (evt) => {
-            evt.preventDefault();
             evt.stopPropagation();
             this.toggleMenu()
         })
@@ -89,6 +92,12 @@ class MobileMenu {
                 let timeout: string | number | NodeJS.Timeout = null;
                 if (!list) return
                 
+                link.addEventListener('click', (evt) => {
+                    if (list) {
+                        evt.preventDefault();
+                    }
+                })
+                
                 link.addEventListener('mouseenter', () => {
                     clearTimeout(timeout);
                     lists.forEach(temp => temp.classList.remove('active'));
@@ -103,6 +112,12 @@ class MobileMenu {
                     }, 300)
                 })
             })
+        })
+        
+        const button = this.menu.querySelector('[data-fancybox]');
+        
+        button.addEventListener('click', (evt) => {
+            Fancybox.show([{ src: `${button.getAttribute('data-src')}`, type: "inline" }]);
         })
     }
     

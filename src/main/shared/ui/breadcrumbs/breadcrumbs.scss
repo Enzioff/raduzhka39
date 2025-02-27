@@ -34,7 +34,7 @@
     }
   }
 
-  a.breadcrumbs__link {
+  div.breadcrumbs__link:has(a) {
     opacity: .4;
 
     &:hover {
