@@ -88,12 +88,14 @@ class MobileMenu {
             const links = el.querySelectorAll('li');
             const lists = el.querySelectorAll('.mobile-menu__list--inner')
             links.forEach(link => {
+                const linkEl = link.querySelector('a');
                 const list = link.querySelector('ul');
                 let timeout: string | number | NodeJS.Timeout = null;
                 if (!list) return
                 
-                link.addEventListener('click', (evt) => {
-                    if (list) {
+                linkEl.addEventListener('click', (evt) => {
+                    console.log(linkEl, linkEl.parentElement.contains(list))
+                    if (linkEl.parentElement.contains(list)) {
                         evt.preventDefault();
                     }
                 })
